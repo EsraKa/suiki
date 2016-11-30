@@ -21,10 +21,23 @@ public class Connexion extends Activity{
     super.onCreate(savedInstanceState);
     setContentView(R.layout.connexion);
 
+    Process();
+  }
 
+  private void Process()
+  {
+    Initialisation();
+    Listeners();
+  }
+
+  private void Initialisation()
+  {
     this.connexion = (Button)findViewById(R.id.connexion);
     this.inscription = (Button)findViewById(R.id.inscription);
+  }
 
+  private void Listeners()
+  {
     this.connexion.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
