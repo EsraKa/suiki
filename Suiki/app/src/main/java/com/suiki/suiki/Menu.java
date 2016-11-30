@@ -24,7 +24,7 @@ public class Menu  extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.Main_Layout);
+        setContentView(R.layout.main_layout);
 
         this.calendrier = (Button)findViewById(R.id.calendrier);
         this.exercice = (Button)findViewById(R.id.exercice);
