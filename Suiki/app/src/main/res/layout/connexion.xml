@@ -14,7 +14,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Mettre le logos Suiki !"
-    android:id="@+id/textView2" />
+    android:id="@+id/suikiText" />
 
   <TextView
     android:text="Identifiant : "
@@ -22,7 +22,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="184dp"
     android:id="@+id/textView3"
-    android:layout_below="@+id/textView2"
+    android:layout_below="@+id/suikiText"
     android:layout_alignParentStart="true" />
 
   <EditText
@@ -30,7 +30,7 @@
     android:layout_height="wrap_content"
     android:inputType="textEmailAddress"
     android:ems="10"
-    android:layout_below="@+id/textView2"
+    android:layout_below="@+id/suikiText"
     android:layout_toEndOf="@+id/textView3"
     android:layout_marginStart="17dp"
     android:layout_marginTop="172dp"
@@ -78,6 +78,5 @@
     android:layout_alignEnd="@+id/editText2"
     android:layout_marginEnd="39dp"
     android:layout_alignStart="@+id/editText2" />
-  />
 
 </RelativeLayout>
