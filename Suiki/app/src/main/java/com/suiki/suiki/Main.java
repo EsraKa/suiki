@@ -1,5 +1,6 @@
 package com.suiki.suiki;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -11,19 +12,13 @@ import android.widget.Button;
 
 public class Main extends AppCompatActivity {
 
+  private Intent intent = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-
+    intent = new Intent(Main.this , Connexion.class);
+    startActivity(intent);
   }
-
- //@Override
-  /*public boolean onCreateOptionsMenu(Menu menu) {
-    super.onCreateOptionsMenu(menu);
-    MenuInflater inflater = getMenuInflater();
-    inflater.inflate(R.menu.slide , menu);
-    return true;
-  }*/
 }
