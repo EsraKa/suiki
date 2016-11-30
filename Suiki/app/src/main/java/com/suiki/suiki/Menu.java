@@ -17,10 +17,6 @@ public class Menu  extends Activity{
     private  Button profile = null;
     private Intent intent = null;
 
-    public Menu() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -18,7 +18,7 @@ public class Main extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    intent = new Intent(Main.this , Connexion.class);
+    intent = new Intent(Main.this , Menu.class);
     startActivity(intent);
   }
 }
