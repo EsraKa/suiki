@@ -3,7 +3,6 @@ package com.suiki.suiki;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
 
@@ -25,7 +24,7 @@ public class Menu  extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu);
+        setContentView(R.layout.Main_Layout);
 
         this.calendrier = (Button)findViewById(R.id.calendrier);
         this.exercice = (Button)findViewById(R.id.exercice);

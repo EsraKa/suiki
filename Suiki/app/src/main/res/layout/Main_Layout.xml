@@ -30,24 +30,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:weightSum="3">
+        android:weightSum="3"
+        android:background="@color/black10">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2.5dp"
             android:text="Calendrier"
+            android:background="@color/grey"
             android:id="@+id/calendrier"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Exercice"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:background="@color/grey"
             android:id="@+id/exercice"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
             android:text="Profile"
+            android:background="@color/grey"
             android:id="@+id/profile"/>
     </LinearLayout>
 
