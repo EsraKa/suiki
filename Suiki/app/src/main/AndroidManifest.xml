@@ -21,6 +21,9 @@
     <activity android:name=".Profile">
 
     </activity>
+    <activity android:name=".Inscription">
+
+    </activity>
   </application>
 
 </manifest>

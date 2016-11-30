@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+  <TextView
+    android:text="INSCRIPTION"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="19dp"
+    android:layout_marginTop="25dp"
+    android:id="@+id/titreInscription"
+    android:textColor="@color/colorAccent"
+    />
+
+  <TextView
+    android:text="Password :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="47dp"
+    android:id="@+id/password"
+    android:layout_below="@+id/email"
+    android:layout_alignEnd="@+id/titreInscription" />
+
+  <TextView
+    android:text="E-mail :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="42dp"
+    android:id="@+id/email"
+    android:layout_below="@+id/prenom"
+    android:layout_alignEnd="@+id/password" />
+
+  <TextView
+    android:text="Prénom :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="41dp"
+    android:id="@+id/prenom"
+    android:layout_below="@+id/nom"
+    android:layout_alignEnd="@+id/email" />
+
+  <TextView
+    android:text="Nom :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:id="@+id/nom"
+    android:layout_below="@+id/titreInscription"
+    android:layout_alignEnd="@+id/prenom" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:hint="Prénom"
+    android:ems="10"
+    android:id="@+id/prenomText"
+    android:layout_alignBaseline="@+id/prenom"
+    android:layout_alignBottom="@+id/prenom"
+    android:layout_alignStart="@+id/nomText" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:hint="Nom"
+    android:ems="10"
+    android:id="@+id/nomText"
+    android:layout_alignBaseline="@+id/nom"
+    android:layout_alignBottom="@+id/nom"
+    android:layout_alignStart="@+id/editText3" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:hint="exemple@exemple"
+    android:layout_marginStart="21dp"
+    android:id="@+id/editText3"
+    android:layout_alignBaseline="@+id/email"
+    android:layout_alignBottom="@+id/email"
+    android:layout_toEndOf="@+id/email" />
+
+  <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="numberPassword"
+    android:ems="10"
+    android:id="@+id/editText4"
+    android:layout_alignBaseline="@+id/password"
+    android:layout_alignBottom="@+id/password"
+    android:layout_alignStart="@+id/editText3" />
+
+  <Button
+    android:text="Valider"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="55dp"
+    android:id="@+id/valider"
+    android:textColor="@color/colorAccent"/>
+
+
+</RelativeLayout>
