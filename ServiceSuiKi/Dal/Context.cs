@@ -9,7 +9,6 @@ namespace Dal
 
         static Context() 
         {
-            Personnes.AddRange()
             Personne p = new Personne();
             p.nom = "KADI";
             p.prenom = "Massil";
