@@ -79,13 +79,10 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\roslyn\Sy
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\roslyn\vbc.exe
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\roslyn\VBCSCompiler.exe
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\App_Data\suiki.mdf
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\App_Data\suiki_log.ldf
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\WebApplication1.dll.config
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\WebApplication1.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\WebApplication1.pdb
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\Antlr3.Runtime.dll
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\Dal.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\DomainModel.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\EntityFramework.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\EntityFramework.SqlServer.dll
@@ -110,7 +107,6 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\System.We
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\System.Web.WebPages.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\System.Web.WebPages.Razor.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\WebGrease.dll
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\Dal.pdb
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\DomainModel.pdb
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\EntityFramework.xml
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\EntityFramework.SqlServer.xml
@@ -145,3 +141,6 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\fr\System
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\fr\EntityFramework.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\SuikiBdd.mdf
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\SuikiBdd_log.ldf
