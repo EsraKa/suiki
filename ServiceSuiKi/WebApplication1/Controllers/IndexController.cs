@@ -4,15 +4,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using DomainModel;
 
 namespace WebApplication1.Controllers
 {
     public class IndexController : ApiController
     {
         // GET: api/Index
-        public void Get()
+        public List<personne> Get()
         {
-       
+            suikiEntities context = new suikiEntities();
+            var personnes = context.personnes.ToList();
+            return personnes;
         }
 
         // GET: api/Index/5

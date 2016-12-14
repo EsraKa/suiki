@@ -142,5 +142,3 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\Web
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.pdb
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\fr\EntityFramework.resources.dll
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\SuikiBdd.mdf
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\SuikiBdd_log.ldf

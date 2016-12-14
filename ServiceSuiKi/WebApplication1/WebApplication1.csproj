@@ -212,7 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DomainModel\DomainModel.csproj">
-      <Project>{5b62bfa7-ad21-43c5-a96f-e2ece99b5f33}</Project>
+      <Project>{d3041fc5-b568-4098-8f51-c8d048e3a5bc}</Project>
       <Name>DomainModel</Name>
     </ProjectReference>
   </ItemGroup>
