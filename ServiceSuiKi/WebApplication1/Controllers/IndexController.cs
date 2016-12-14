@@ -4,19 +4,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using WebApplication1.Models;
+using Dal;
+using DomainModel;
 
 namespace WebApplication1.Controllers
 {
     public class IndexController : ApiController
     {
         // GET: api/Index
-        public IEnumerable<Personne> Get()
-        {
-            Personne p = new Personne();
-            p.nom = "KADI";
-            p.prenom = "Massil";
-            return new Personne[] { p };
+        public Personne Get()
+        {            
+            Context context = new Context();
+            return context.Personnes.FirstOrDefault(x => x.Id_Perso == 1);
         }
 
         // GET: api/Index/5

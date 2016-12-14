@@ -53,3 +53,17 @@ D:\Cours\Y-NOV\Initiateur\ServiceSuiKi\Dal\bin\Debug\fr\System.Web.WebPages.Depl
 D:\Cours\Y-NOV\Initiateur\ServiceSuiKi\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
 D:\Cours\Y-NOV\Initiateur\ServiceSuiKi\Dal\obj\Debug\Dal.dll
 D:\Cours\Y-NOV\Initiateur\ServiceSuiKi\Dal\obj\Debug\Dal.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\App_Data\suiki.mdf
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\App_Data\suiki_log.ldf
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\Dal.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\Dal.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\Dal.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\DomainModel.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\DomainModel.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\obj\Debug\Dal.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\obj\Debug\Dal.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\Dal\obj\Debug\Dal.pdb

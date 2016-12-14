@@ -1,0 +1,5 @@
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\DomainModel\bin\Debug\DomainModel.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\DomainModel\bin\Debug\DomainModel.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\DomainModel\obj\Debug\DomainModel.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\DomainModel\obj\Debug\DomainModel.pdb
