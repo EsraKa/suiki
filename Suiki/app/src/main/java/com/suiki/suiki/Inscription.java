@@ -13,5 +13,21 @@ public class Inscription extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.inscription);
+
+    Process();
+  }
+
+
+  private void Process() {
+    Initialisation();
+    Listener();
+  }
+
+  private void Initialisation(){
+
+  }
+
+  private void Listener(){
+
   }
 }
