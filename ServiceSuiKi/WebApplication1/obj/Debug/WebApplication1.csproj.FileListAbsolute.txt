@@ -142,3 +142,7 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\Web
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\obj\Debug\WebApplication1.pdb
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\fr\EntityFramework.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\System.Web.Cors.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\System.Web.Http.Cors.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\System.Web.Http.Cors.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\ServiceSuiKi\WebApplication1\bin\fr\EntityFramework.SqlServer.resources.dll
