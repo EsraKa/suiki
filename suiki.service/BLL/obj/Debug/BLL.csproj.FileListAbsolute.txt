@@ -9,3 +9,14 @@ c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug
 c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\obj\Debug\BLL.dll
 c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\obj\Debug\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\Dal.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\Dal.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\obj\Debug\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\obj\Debug\BLL.pdb

@@ -10,3 +10,15 @@ c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Deb
 c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\obj\Debug\Model.dll
 c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\obj\Debug\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\Model.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\fr\EntityFramework.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\obj\Debug\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Model\obj\Debug\Model.pdb
