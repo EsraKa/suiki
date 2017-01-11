@@ -30,9 +30,19 @@ namespace labo.Controllers
         {
         }
 
+        //Ajouter une Personne.
         // PUT: api/Personne/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int user, string nom, string prenom, string mail, string patient_medecin)
         {
+            personne personne = new personne();
+
+            personne.ID_USER = user;
+            personne.MAIL = mail;
+            personne.NOM_PERSONNE = nom;
+            personne.PATIENT_MEDECIN = patient_medecin;
+            personne.PRENOM_PERSONNE = prenom;
+
+            PersonneBll.AddPersonne(personne);
         }
 
         // DELETE: api/Personne/5
