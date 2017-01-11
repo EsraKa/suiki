@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.suiki.suiki.Profile;
+import com.suiki.suiki.Vue.Profile;
 import com.suiki.suiki.R;
 
 /**
