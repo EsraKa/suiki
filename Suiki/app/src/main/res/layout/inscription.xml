@@ -58,10 +58,10 @@
     android:inputType="textPersonName"
     android:hint="Prénom"
     android:ems="10"
-    android:id="@+id/prenomText"
+    android:id="@+id/editPrenom"
     android:layout_alignBaseline="@+id/prenom"
     android:layout_alignBottom="@+id/prenom"
-    android:layout_alignStart="@+id/nomText" />
+    android:layout_alignStart="@+id/editNom" />
 
   <EditText
     android:layout_width="wrap_content"
@@ -69,10 +69,10 @@
     android:inputType="textPersonName"
     android:hint="Nom"
     android:ems="10"
-    android:id="@+id/nomText"
+    android:id="@+id/editNom"
     android:layout_alignBaseline="@+id/nom"
     android:layout_alignBottom="@+id/nom"
-    android:layout_alignStart="@+id/editText3" />
+    android:layout_alignStart="@+id/editMail" />
 
   <EditText
     android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
     android:ems="10"
     android:hint="exemple@exemple"
     android:layout_marginStart="21dp"
-    android:id="@+id/editText3"
+    android:id="@+id/editMail"
     android:layout_alignBaseline="@+id/email"
     android:layout_alignBottom="@+id/email"
     android:layout_toEndOf="@+id/email" />
@@ -91,10 +91,10 @@
     android:layout_height="wrap_content"
     android:inputType="numberPassword"
     android:ems="10"
-    android:id="@+id/editText4"
+    android:id="@+id/editPassword"
     android:layout_alignBaseline="@+id/password"
     android:layout_alignBottom="@+id/password"
-    android:layout_alignStart="@+id/editText3" />
+    android:layout_alignStart="@+id/editMail" />
 
   <Button
     android:text="Valider"
