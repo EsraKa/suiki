@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.suiki.suiki.Vue.Connexion;
+import com.suiki.suiki.Vue.TestService;
 
 
 public class Main extends AppCompatActivity {
@@ -20,7 +21,7 @@ public class Main extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    intent = new Intent(Main.this , Connexion.class);
+    intent = new Intent(Main.this , TestService.class);
     startActivity(intent);
   }
 }

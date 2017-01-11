@@ -1,6 +1,6 @@
 package com.suiki.suiki.DomainModel;
 
-import com.suiki.suiki.Personne;
+import com.suiki.suiki.Model.Personne;
 
 import java.util.List;
 

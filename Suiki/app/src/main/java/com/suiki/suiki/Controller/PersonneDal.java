@@ -1,6 +1,6 @@
 package com.suiki.suiki.Controller;
 
-import com.suiki.suiki.Personne;
+import com.suiki.suiki.Model.Personne;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class PersonneDal extends BaseDal{
 
             @Override
             public void onFailure(Call<List<Personne>> call, Throwable t) {
-                //throw new Exception(t.getMessage() , t.getCause());
+                System.err.print(t.getMessage());
             }
         });
         return lPersonne;
