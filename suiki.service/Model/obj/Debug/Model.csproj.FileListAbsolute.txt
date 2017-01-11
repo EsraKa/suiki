@@ -1,0 +1,12 @@
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\Model.dll.config
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\Model.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\Model.pdb
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\EntityFramework.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\EntityFramework.xml
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\fr\EntityFramework.resources.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\obj\Debug\Model.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\Model\obj\Debug\Model.pdb

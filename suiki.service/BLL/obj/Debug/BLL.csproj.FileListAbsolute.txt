@@ -1,0 +1,11 @@
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\BLL.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\BLL.pdb
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\Dal.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\Model.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\EntityFramework.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\Dal.pdb
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\Model.pdb
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\bin\Debug\EntityFramework.xml
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\obj\Debug\BLL.dll
+c:\Users\loick\OneDrive\documents\visual studio 2015\Projects\labo\BLL\obj\Debug\BLL.pdb
