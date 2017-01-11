@@ -9,6 +9,8 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 
+import com.suiki.suiki.Vue.Connexion;
+
 
 public class Main extends AppCompatActivity {
 
@@ -18,7 +20,7 @@ public class Main extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    intent = new Intent(Main.this , Menu.class);
+    intent = new Intent(Main.this , Connexion.class);
     startActivity(intent);
   }
 }

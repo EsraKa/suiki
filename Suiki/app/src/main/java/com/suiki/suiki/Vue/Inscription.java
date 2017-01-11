@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.suiki.suiki.APIConnection;
-import com.suiki.suiki.Personne;
 import com.suiki.suiki.R;
 
 import java.io.IOException;
@@ -62,7 +60,6 @@ public class Inscription extends Activity {
     String NOM = nom.getText().toString();
     String PRENOM = prenom.getText().toString();
     String MAIL = mail.getText().toString();
-    Personne.PutPersonne(NOM , PRENOM , MAIL);
   }
 
 }
