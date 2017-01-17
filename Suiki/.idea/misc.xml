@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
   <component name="AndroidDexCompilerConfiguration">
     <option name="VM_OPTIONS" value="-Xmx512m" />
   </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+>>>>>>> 660ca80bbb24e30a11d993d13803e00d927da9d1
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />

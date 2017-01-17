@@ -1,0 +1,158 @@
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\obj\Debug\labo.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\obj\Debug\labo.pdb
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\ApplicationInsights.config
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\csc.exe
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\vbc.exe
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\VBCSCompiler.exe
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\labo.dll.config
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\labo.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\labo.pdb
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Antlr3.Runtime.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\BLL.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\EntityFramework.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\EntityFramework.SqlServer.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.Web.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.ApplicationInsights.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Model.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Newtonsoft.Json.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Net.Http.Formatting.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Helpers.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Http.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Http.WebHost.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Mvc.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Optimization.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Razor.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.WebPages.Deployment.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.WebPages.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.WebPages.Razor.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\WebGrease.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Dal.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\BLL.pdb
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Model.pdb
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\EntityFramework.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\EntityFramework.SqlServer.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.Web.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.ApplicationInsights.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Newtonsoft.Json.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Net.Http.Formatting.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Helpers.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Http.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Http.WebHost.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Mvc.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Optimization.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.Razor.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.WebPages.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.WebPages.Deployment.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\System.Web.WebPages.Razor.xml
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Antlr3.Runtime.pdb
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\Dal.pdb
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Net.Http.Formatting.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.Http.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.Http.WebHost.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.Optimization.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.Razor.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\loick\OneDrive\Documents\Visual Studio 2015\Projects\suiki.service\Service\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\ApplicationInsights.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\csc.exe
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\System.Collections.Immutable.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\System.Reflection.Metadata.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\vbc.exe
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\VBCSCompiler.exe
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\roslyn\VBCSCompiler.exe.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\labo.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\labo.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\labo.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Antlr3.Runtime.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.DependencyCollector.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.Web.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.WindowsServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.ApplicationInsights.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.Web.Infrastructure.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Newtonsoft.Json.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Net.Http.Formatting.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Helpers.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Http.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Http.WebHost.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Mvc.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Optimization.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Razor.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.WebPages.Deployment.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.WebPages.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.WebPages.Razor.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\WebGrease.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Dal.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\EntityFramework.SqlServer.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.DependencyCollector.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.Web.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.AI.WindowsServer.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.ApplicationInsights.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Newtonsoft.Json.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Net.Http.Formatting.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Helpers.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Http.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Http.WebHost.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Mvc.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Optimization.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.Razor.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.WebPages.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.WebPages.Deployment.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\System.Web.WebPages.Razor.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Antlr3.Runtime.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\Dal.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Net.Http.Formatting.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.Helpers.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.Http.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.Http.WebHost.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.Mvc.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.Optimization.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.Razor.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.WebPages.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\obj\Debug\labo.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\Service\obj\Debug\labo.pdb
