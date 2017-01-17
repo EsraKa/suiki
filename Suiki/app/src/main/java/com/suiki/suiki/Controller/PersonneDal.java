@@ -37,4 +37,20 @@ public class PersonneDal extends BaseDal{
         return lPersonne;
     }
 
+    public void getPersonne()
+    {
+        Call<Personne> callPersonne = context.personneService.getPersonne(1);
+        callPersonne.enqueue(new Callback<Personne>() {
+            @Override
+            public void onResponse(Call<Personne> call, Response<Personne> response) {
+                System.out.println(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<Personne> call, Throwable t) {
+
+            }
+        });
+    }
+
 }

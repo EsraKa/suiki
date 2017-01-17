@@ -25,6 +25,6 @@ public class TestService extends Activity {
 
         PersonneDal dal = new PersonneDal();
 
-        dal.getListPersonnes();
+        dal.getPersonne();
     }
 }
