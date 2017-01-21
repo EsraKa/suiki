@@ -34,3 +34,13 @@ C:\Users\loick\Documents\YdaysProject\suiki\suiki.service\Model\bin\Debug\fr\Ent
 C:\Users\loick\Documents\YdaysProject\suiki\suiki.service\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\loick\Documents\YdaysProject\suiki\suiki.service\Model\obj\Debug\Model.dll
 C:\Users\loick\Documents\YdaysProject\suiki\suiki.service\Model\obj\Debug\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\Model.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Debug\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Debug\Model.pdb

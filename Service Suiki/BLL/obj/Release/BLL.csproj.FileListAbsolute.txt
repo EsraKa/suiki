@@ -1,0 +1,14 @@
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\Dal.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\Dal.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\obj\Release\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\obj\Release\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\BLL.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Release\EntityFramework.SqlServer.xml

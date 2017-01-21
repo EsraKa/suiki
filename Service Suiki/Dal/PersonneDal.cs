@@ -23,9 +23,10 @@ namespace Dal
             return res.ToList<personne>();
         }
         
-        public void AddPersonne(personne personne)
+        public int AddPersonne(personne personne)
         {
             context.personnes.Add(personne);
+            return personne.ID_PERSONNE;
         }
     }
 }

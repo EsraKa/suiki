@@ -26,11 +26,12 @@ namespace BLL
             }
         }
 
-        public static void AddPersonne(personne personne)
+        public static int AddPersonne(personne personne)
         {
             using (PersonneDal ctx = new PersonneDal())
             {
-                ctx.AddPersonne(personne);
+                int id = ctx.AddPersonne(personne);
+                return id;
             }
         }
     }

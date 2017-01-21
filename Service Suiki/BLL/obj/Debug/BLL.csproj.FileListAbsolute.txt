@@ -20,3 +20,17 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\bin\Debug\EntityFramewor
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\obj\Debug\BLL.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\suiki.service\BLL\obj\Debug\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\Dal.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\Dal.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\obj\Debug\BLL.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\obj\Debug\BLL.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\BLL.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\BLL\bin\Debug\EntityFramework.SqlServer.xml

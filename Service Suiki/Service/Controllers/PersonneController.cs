@@ -11,6 +11,7 @@ namespace labo.Controllers
 {
     public class PersonneController : ApiController
     {
+        [HttpGet]
         // GET: api/Personne
         public List<personne> Get()
         {
