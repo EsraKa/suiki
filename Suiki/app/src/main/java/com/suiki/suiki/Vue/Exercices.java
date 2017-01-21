@@ -9,12 +9,10 @@ import android.widget.Button;
 import com.suiki.suiki.R;
 
 /**
- * Created by Esra on 11/01/2017.
+ * Created by Esra on 21/01/2017.
  */
 
-
-public class Profile extends Activity {
-
+public class Exercices extends Activity {
   private Button calendrier = null;
   private Button exercice = null;
   private Button profile = null;
@@ -23,7 +21,7 @@ public class Profile extends Activity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.profile);
+    setContentView(R.layout.exercices);
     Process();
   }
 
@@ -36,13 +34,14 @@ public class Profile extends Activity {
     this.calendrier = (Button)findViewById(R.id.calendrier);
     this.exercice = (Button)findViewById(R.id.exercice);
     this.profile = (Button)findViewById(R.id.profile);
+
   }
 
   private void Listeners(){
     this.calendrier.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
-        intent = new Intent(Profile.this , Calendrier.class);
+        intent = new Intent(Exercices.this , Calendrier.class);
         startActivity(intent);
       }
     });
@@ -50,7 +49,7 @@ public class Profile extends Activity {
     this.exercice.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
-        intent = new Intent(Profile.this , Exercices.class);
+        intent = new Intent(Exercices.this , Exercices.class);
         startActivity(intent);
       }
     });
@@ -58,9 +57,10 @@ public class Profile extends Activity {
     this.profile.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
-        intent = new Intent(Profile.this , Profile.class);
+        intent = new Intent(Exercices.this , Profile.class);
         startActivity(intent);
       }
     });
   }
 }
+

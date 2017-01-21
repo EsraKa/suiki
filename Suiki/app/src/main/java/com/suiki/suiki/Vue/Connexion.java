@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.suiki.suiki.R;
 
@@ -16,13 +17,14 @@ public class Connexion extends Activity{
 
   private Button connexion = null;
   private Button inscription = null;
+  private ImageView logo = null;
   private Intent intent = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.connexion);
-
+    logo = (ImageView) findViewById(R.id.logo);
     Process();
   }
 
@@ -43,7 +45,7 @@ public class Connexion extends Activity{
     this.connexion.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
-        intent = new Intent(Connexion.this , Profile.class);
+        intent = new Intent(Connexion.this , Calendrier.class);
         startActivity(intent);
       }
     });

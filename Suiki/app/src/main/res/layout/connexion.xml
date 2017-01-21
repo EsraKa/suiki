@@ -11,6 +11,14 @@
   tools:context="com.suiki.suiki.Main">
 
 
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@mipmap/logo"
+    android:id="@+id/logo"
+    android:layout_above="@+id/editMail"
+    android:layout_alignParentStart="true" />
+
   <TextView
     android:text="E-mail :"
     android:layout_width="wrap_content"
@@ -19,16 +27,6 @@
     android:layout_centerVertical="true"
     android:layout_alignParentStart="true"
     android:layout_marginStart="42dp" />
-
-  <EditText
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:inputType="textEmailAddress"
-    android:ems="10"
-    android:id="@+id/editMail"
-    android:layout_centerVertical="true"
-    android:layout_alignParentEnd="true"
-    android:layout_marginEnd="22dp" />
 
   <TextView
     android:text="Password"
@@ -49,33 +47,38 @@
     android:layout_below="@+id/editMail"
     android:layout_alignStart="@+id/editMail" />
 
-  <Button
-    android:text="Inscription"
+  <EditText
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/inscription"
-    android:textColor="@color/colorAccent"
-    android:layout_below="@+id/connexion"
-    android:layout_alignStart="@+id/editPassword" />
+    android:inputType="textEmailAddress"
+    android:ems="10"
+    android:id="@+id/editMail"
+    android:layout_marginEnd="22dp"
+    android:layout_alignBaseline="@+id/email"
+    android:layout_alignBottom="@+id/email"
+    android:layout_alignParentEnd="true" />
 
   <Button
     android:text="Connexion"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/connexion"
-    android:layout_marginTop="42dp"
+    android:layout_marginTop="35dp"
     android:layout_centerInParent="@+id/imageView"
-    android:textColor="@color/colorAccent"
+    android:textColor="@color/black10"
     android:layout_below="@+id/editPassword"
-    android:layout_alignStart="@+id/inscription" />
+    android:layout_alignParentEnd="true"
+    android:backgroundTint="?attr/colorAccent" />
 
-  <ImageView
-    android:layout_width="wrap_content"
+  <Button
+    android:text="Inscription"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:srcCompat="@mipmap/logo"
-    android:id="@+id/imageView"
-    android:layout_above="@+id/editMail"
-    android:layout_alignParentStart="true" />
+    android:id="@+id/inscription"
+    android:textColor="@color/black10"
+    android:layout_below="@+id/connexion"
+    android:layout_alignParentStart="true"
+    android:backgroundTint="@color/colorAccent" />
 
 
 </RelativeLayout>

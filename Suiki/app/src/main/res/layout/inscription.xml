@@ -96,21 +96,11 @@
     android:layout_alignBottom="@+id/password"
     android:layout_alignStart="@+id/editMail" />
 
-  <Button
-    android:text="Valider"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="55dp"
-    android:id="@+id/valider"
-    android:textColor="@color/colorAccent"/>
-
   <EditText
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:inputType="textPersonName"
-      android:text="Name"
+      android:hint="Name"
       android:ems="10"
       android:layout_above="@+id/editNom"
       android:layout_alignStart="@+id/editNom"
@@ -124,6 +114,17 @@
       android:layout_alignBaseline="@+id/editPseudo"
       android:layout_alignBottom="@+id/editPseudo"
       android:layout_alignStart="@+id/email" />
+
+  <Button
+    android:text="Valider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/valider"
+    android:textColor="@color/black10"
+    android:backgroundTint="@color/colorAccent"
+    android:layout_marginTop="53dp"
+    android:layout_below="@+id/editPassword"
+    android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
