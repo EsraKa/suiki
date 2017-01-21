@@ -12,16 +12,17 @@ namespace labo.Controllers
     public class ExerciceController : ApiController
     {
         // GET: api/Exercice
-        public exercice Get()
+        public List<exercice> Get()
         {
             ExerciceBll bll = new ExerciceBll();
-            return bll.GetExercice(1);
+            return bll.GetExercice();
         }
 
         // GET: api/Exercice/5
-        public string Get(int id)
+        public exercice Get(int id)
         {
-            return "value";
+            ExerciceBll bll = new ExerciceBll();
+            return bll.GetExercice(id);
         }
 
         // POST: api/Exercice
@@ -30,8 +31,15 @@ namespace labo.Controllers
         }
 
         // PUT: api/Exercice/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(string nom, string description, string lien)
         {
+            exercice exercice = new exercice();
+
+            exercice.NOM = nom;
+            exercice.DESCRIPTION = description;
+            exercice.LIEN = lien;
+
+            ExerciceBll.AddExercice(exercice);
         }
 
         // DELETE: api/Exercice/5
