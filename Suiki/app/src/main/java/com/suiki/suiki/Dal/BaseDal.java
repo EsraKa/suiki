@@ -1,4 +1,4 @@
-package com.suiki.suiki.Controller;
+package com.suiki.suiki.Dal;
 
 import com.suiki.suiki.DomainModel.SuikiContext;
 

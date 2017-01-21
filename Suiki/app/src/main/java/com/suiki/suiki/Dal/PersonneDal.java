@@ -1,4 +1,4 @@
-package com.suiki.suiki.Controller;
+package com.suiki.suiki.Dal;
 
 import com.suiki.suiki.Model.Personne;
 
@@ -43,7 +43,25 @@ public class PersonneDal extends BaseDal{
         callPersonne.enqueue(new Callback<Personne>() {
             @Override
             public void onResponse(Call<Personne> call, Response<Personne> response) {
+                System.out.println(response.body().ID_PERSONNE);
+                System.out.println(response.body().NOM_PERSONNE);
+
                 System.out.println(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<Personne> call, Throwable t) {
+                System.err.print(t.getStackTrace());
+            }
+        });
+    }
+
+    public void postPersonne(Personne personne){
+        Call<Personne> post = context.personneService.postPersonne(personne);
+        post.enqueue(new Callback<Personne>() {
+            @Override
+            public void onResponse(Call<Personne> call, Response<Personne> response) {
+
             }
 
             @Override
@@ -52,5 +70,4 @@ public class PersonneDal extends BaseDal{
             }
         });
     }
-
 }

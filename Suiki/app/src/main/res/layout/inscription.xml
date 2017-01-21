@@ -106,5 +106,24 @@
     android:id="@+id/valider"
     android:textColor="@color/colorAccent"/>
 
+  <EditText
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="textPersonName"
+      android:text="Name"
+      android:ems="10"
+      android:layout_above="@+id/editNom"
+      android:layout_alignStart="@+id/editNom"
+      android:id="@+id/editPseudo" />
+
+  <TextView
+      android:text="Pseudo :"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textPseudo"
+      android:layout_alignBaseline="@+id/editPseudo"
+      android:layout_alignBottom="@+id/editPseudo"
+      android:layout_alignStart="@+id/email" />
+
 
 </RelativeLayout>

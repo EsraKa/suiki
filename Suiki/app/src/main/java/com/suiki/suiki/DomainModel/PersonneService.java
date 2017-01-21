@@ -5,7 +5,9 @@ import com.suiki.suiki.Model.Personne;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 
 /**
@@ -18,4 +20,6 @@ public interface PersonneService {
     Call<List<Personne>>  getListPersonne();
     @GET("Personne/{id}")
     Call<Personne> getPersonne(@Path("id") int id);
+    @POST("Personne")
+    Call<Personne> postPersonne(@Body Personne personne);
 }

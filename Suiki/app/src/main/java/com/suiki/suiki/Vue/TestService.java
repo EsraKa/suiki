@@ -2,13 +2,12 @@ package com.suiki.suiki.Vue;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-import com.suiki.suiki.Controller.PersonneDal;
-import com.suiki.suiki.Model.Personne;
+import com.suiki.suiki.Dal.PersonneDal;
 import com.suiki.suiki.R;
-
-import org.w3c.dom.Text;
 
 /**
  * Created by Massil on 11/01/2017.
@@ -17,14 +16,22 @@ import org.w3c.dom.Text;
 public class TestService extends Activity {
 
     TextView text;
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test_service_layout);
         text = (TextView) findViewById(R.id.testServiceText);
+        button = (Button) findViewById(R.id.app);
 
-        PersonneDal dal = new PersonneDal();
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PersonneDal dal = new PersonneDal();
 
-        dal.getPersonne();
+                dal.getPersonne();
+            }
+        });
+
     }
 }

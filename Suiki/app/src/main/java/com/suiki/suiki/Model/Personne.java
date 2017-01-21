@@ -1,5 +1,7 @@
 package com.suiki.suiki.Model;
 
+import com.google.gson.annotations.SerializedName;
+
 import org.simpleframework.xml.Element;
 
 /**
@@ -7,16 +9,16 @@ import org.simpleframework.xml.Element;
  */
 
 public class Personne {
-    @Element(name = "ID_PERSONNE")
+    @SerializedName("ID_PERSONNE")
     public int ID_PERSONNE ;
-    @Element(name = "ID_USER")
+    @SerializedName("ID_USER")
     public int ID_USER ;
-    @Element(name = "NOM_PERSONNE")
+    @SerializedName("NOM_PERSONNE")
     public String NOM_PERSONNE ;
-    @Element(name = "PRENOM_PERSONNE")
+    @SerializedName("PRENOM_PERSONNE")
     public String PRENOM_PERSONNE ;
-    @Element(name = "MAIL")
+    @SerializedName("MAIL")
     public String MAIL ;
-    @Element(name = "PATIENT_MEDECIN")
+    @SerializedName("PATIENT_MEDECIN")
     public String PATIENT_MEDECIN ;
 }

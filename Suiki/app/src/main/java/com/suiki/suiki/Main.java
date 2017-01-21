@@ -21,7 +21,7 @@ public class Main extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    intent = new Intent(Main.this , TestService.class);
+    intent = new Intent(Main.this , Connexion.class);
     startActivity(intent);
   }
 }
