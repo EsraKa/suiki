@@ -1,0 +1,10 @@
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\Model.dll.config
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\Model.pdb
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\EntityFramework.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\EntityFramework.SqlServer.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\EntityFramework.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Release\EntityFramework.SqlServer.xml
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Release\Model.dll
+D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Release\Model.pdb

@@ -26,6 +26,7 @@ namespace Dal
         public int AddPersonne(personne personne)
         {
             context.personnes.Add(personne);
+            context.SaveChanges();
             return personne.ID_PERSONNE;
         }
     }

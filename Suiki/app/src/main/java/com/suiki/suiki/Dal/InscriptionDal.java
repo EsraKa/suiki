@@ -2,6 +2,7 @@ package com.suiki.suiki.Dal;
 
 import android.util.Pair;
 
+import com.suiki.suiki.Model.Inscription;
 import com.suiki.suiki.Model.Personne;
 import com.suiki.suiki.Model.Utilisateur;
 
@@ -16,17 +17,20 @@ import retrofit2.Response;
 public class InscriptionDal extends BaseDal {
     public void Inscrire(Utilisateur utilisateur , Personne personne)
     {
-        Call<Pair<Utilisateur , Personne>> call =
-                context.inscriptionService.inscrire(new Pair<Utilisateur , Personne>(utilisateur , personne));
-        call.enqueue(new Callback<Pair<Utilisateur, Personne>>() {
+        Inscription inscription = new Inscription();
+        inscription.personne = personne;
+        inscription.utilisateur = utilisateur;
+        Call<Inscription> call =
+                context.inscriptionService.inscrire(inscription);
+        call.enqueue(new Callback<Inscription>() {
             @Override
-            public void onResponse(Call<Pair<Utilisateur, Personne>> call, Response<Pair<Utilisateur, Personne>> response) {
-
+            public void onResponse(Call<Inscription> call, Response<Inscription> response) {
+                System.out.println(response);
             }
 
             @Override
-            public void onFailure(Call<Pair<Utilisateur, Personne>> call, Throwable t) {
-
+            public void onFailure(Call<Inscription> call, Throwable t) {
+                System.err.print(t.getMessage());
             }
         });
     }

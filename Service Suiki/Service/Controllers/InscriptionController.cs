@@ -7,17 +7,27 @@ using System.Web.Http;
 using System.Web.UI;
 using BLL;
 using Model;
+using Model.modelService;
 
 namespace labo.Controllers
 {
     public class InscriptionController : ApiController
     {
         // POST: api/Inscription
-        public void Post(KeyValuePair<utilisateur , personne> pair )
+        public string Post(Inscription inscription)
         {
-            int idUtilisateur = UtilisateurBll.AjouterUtilisateur(pair.Key);
-            pair.Value.ID_USER = idUtilisateur;
-            PersonneBll.AddPersonne(pair.Value);
+            try
+            {
+                int idUtilisateur = UtilisateurBll.AjouterUtilisateur(inscription.Utilisateur);
+                inscription.Personne.ID_USER = idUtilisateur;
+                PersonneBll.AddPersonne(inscription.Personne);
+                return "status:true";
+            }
+            catch (Exception e)
+            {
+                return "status:false";
+            }
+            
         }
 
     }

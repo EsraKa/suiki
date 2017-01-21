@@ -2,6 +2,7 @@ package com.suiki.suiki.DomainModel;
 
 import android.util.Pair;
 
+import com.suiki.suiki.Model.Inscription;
 import com.suiki.suiki.Model.Personne;
 import com.suiki.suiki.Model.Utilisateur;
 
@@ -16,5 +17,5 @@ import retrofit2.http.POST;
 
 public interface InscriptionService {
     @POST
-    Call<Pair<Utilisateur, Personne>> inscrire(@Body Pair<Utilisateur , Personne> pairInscription);
+    Call<Inscription> inscrire(@Body Inscription inscription);
 }
