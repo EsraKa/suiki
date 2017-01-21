@@ -63,7 +63,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <Compile Include="SymptomeDal.cs" />
-    <Compile Include="UtilisateurDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

@@ -1,14 +1,10 @@
-﻿using Dal;
+﻿using System.Collections.Generic;
+using Dal;
 using Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class A_symptomeBll
+    public class ASymptomeBll
     {
         public a_symptomes GetA_symptome(int id)
         {
@@ -26,11 +22,11 @@ namespace BLL
             }
         }
 
-        public static void AddA_symptome(a_symptomes a_symptome)
+        public static void AddA_symptome(a_symptomes aSymptome)
         {
             using (A_symptomeDal ctx = new A_symptomeDal())
             {
-                ctx.AddA_symptome(a_symptome);
+                ctx.AddA_symptome(aSymptome);
             }
         }
     }

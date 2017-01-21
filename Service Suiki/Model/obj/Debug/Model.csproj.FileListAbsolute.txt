@@ -41,6 +41,5 @@ D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramew
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.SqlServer.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.xml
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\bin\Debug\EntityFramework.SqlServer.xml
-D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Debug\Model.dll
 D:\Cours\Y-NOV\Initiateur\suiki\suiki\Service Suiki\Model\obj\Debug\Model.pdb

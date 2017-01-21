@@ -12,6 +12,7 @@ namespace Dal
         public a_symptomes GetA_symptome(int id)
         {
             //TODO
+            return null;
         }
         public List<a_symptomes> GetA_symptome()
         {
@@ -20,9 +21,9 @@ namespace Dal
             return res.ToList<a_symptomes>();
         }
 
-        public void AddA_symptome(a_symptomes a_symptomes)
+        public void AddA_symptome(a_symptomes symptomes)
         {
-            context.a_symptomes.Add(a_symptomes);
+            context.a_symptomes.Add(symptomes);
         }
     }
 }

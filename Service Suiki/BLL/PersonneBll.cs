@@ -1,10 +1,6 @@
-﻿using Dal;
+﻿using System.Collections.Generic;
+using Dal;
 using Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BLL
 {

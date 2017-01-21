@@ -10,6 +10,7 @@ namespace Dal
     public class BaseDal : IDisposable
     {
         protected suikiEntities context;
+
         public BaseDal()
         {
             this.context = new suikiEntities();
