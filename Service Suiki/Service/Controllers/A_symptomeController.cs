@@ -14,14 +14,14 @@ namespace labo.Controllers
         // GET: api/A_symptome
         public List<a_symptomes> Get()
         {
-            A_symptomeBll bll = new A_symptomeBll();
+            ASymptomeBll bll = new ASymptomeBll();
             return bll.GetA_symptome();
         }
 
         // GET: api/A_symptome/5
         public a_symptomes Get(int id)
         {
-            A_symptomeBll bll = new A_symptomeBll();
+            ASymptomeBll bll = new ASymptomeBll();
             return bll.GetA_symptome(id);
         }
 

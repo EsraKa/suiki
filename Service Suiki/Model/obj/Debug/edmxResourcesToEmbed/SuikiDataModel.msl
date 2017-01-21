@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="suikiModelStoreContainer" CdmEntityContainer="suikiEntities">
+    <EntitySetMapping Name="fiche_medical">
+      <EntityTypeMapping TypeName="suikiModel.fiche_medical">
+        <MappingFragment StoreEntitySet="fiche_medical">
+          <ScalarProperty Name="ID_FICHE" ColumnName="ID_FICHE" />
+          <ScalarProperty Name="ID_PATHOLOGIE" ColumnName="ID_PATHOLOGIE" />
+          <ScalarProperty Name="ID_PERSONNE" ColumnName="ID_PERSONNE" />
+          <ScalarProperty Name="ID_PHASE" ColumnName="ID_PHASE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pathologies">
+      <EntityTypeMapping TypeName="suikiModel.pathologie">
+        <MappingFragment StoreEntitySet="pathologie">
+          <ScalarProperty Name="ID_PATHOLOGIE" ColumnName="ID_PATHOLOGIE" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personnes">
+      <EntityTypeMapping TypeName="suikiModel.personne">
+        <MappingFragment StoreEntitySet="personne">
+          <ScalarProperty Name="ID_PERSONNE" ColumnName="ID_PERSONNE" />
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+          <ScalarProperty Name="NOM_PERSONNE" ColumnName="NOM_PERSONNE" />
+          <ScalarProperty Name="PRENOM_PERSONNE" ColumnName="PRENOM_PERSONNE" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="PATIENT_MEDECIN" ColumnName="PATIENT_MEDECIN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phases">
+      <EntityTypeMapping TypeName="suikiModel.phase">
+        <MappingFragment StoreEntitySet="phase">
+          <ScalarProperty Name="ID_PHASE" ColumnName="ID_PHASE" />
+          <ScalarProperty Name="NOM_PHASE" ColumnName="NOM_PHASE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="symptomes">
+      <EntityTypeMapping TypeName="suikiModel.symptome">
+        <MappingFragment StoreEntitySet="symptomes">
+          <ScalarProperty Name="ID_SYMPTOME" ColumnName="ID_SYMPTOME" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utilisateurs">
+      <EntityTypeMapping TypeName="suikiModel.utilisateur">
+        <MappingFragment StoreEntitySet="utilisateur">
+          <ScalarProperty Name="ID_USER" ColumnName="ID_USER" />
+          <ScalarProperty Name="NOM_UTILISATEUR" ColumnName="NOM_UTILISATEUR" />
+          <ScalarProperty Name="MOT_DE_PASSE" ColumnName="MOT_DE_PASSE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="a_symptomes">
+      <EntityTypeMapping TypeName="suikiModel.a_symptomes">
+        <MappingFragment StoreEntitySet="a_symptomes">
+          <ScalarProperty Name="ID_SYMPTOME" ColumnName="ID_SYMPTOME" />
+          <ScalarProperty Name="ID_PERSONNE" ColumnName="ID_PERSONNE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exercices">
+      <EntityTypeMapping TypeName="suikiModel.exercice">
+        <MappingFragment StoreEntitySet="exercice">
+          <ScalarProperty Name="ID_EXERCICE" ColumnName="ID_EXERCICE" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="LIEN" ColumnName="LIEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phase_exercice">
+      <EntityTypeMapping TypeName="suikiModel.phase_exercice">
+        <MappingFragment StoreEntitySet="phase_exercice">
+          <ScalarProperty Name="ID_PHASE" ColumnName="ID_PHASE" />
+          <ScalarProperty Name="ID_EXERCICE" ColumnName="ID_EXERCICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -23,6 +23,7 @@ namespace Dal
         public int AddUtilisateur(utilisateur utilisateur)
         {
             context.utilisateurs.Add(utilisateur);
+            context.SaveChanges();
             return utilisateur.ID_USER;
         }
     }

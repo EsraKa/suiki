@@ -76,6 +76,7 @@
     <Compile Include="fiche_medical.cs">
       <DependentUpon>SuikiDataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="modelService\Inscription.cs" />
     <Compile Include="pathologie.cs">
       <DependentUpon>SuikiDataModel.tt</DependentUpon>
     </Compile>
@@ -137,9 +138,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="SuikiDataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
