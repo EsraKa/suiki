@@ -1,3 +1,4 @@
 /Service Suiki/Model/*
 /Service Suiki/Service/Web.config
 /Service Suiki/Service/bin/*
+\Service Suiki\Service\bin\*
