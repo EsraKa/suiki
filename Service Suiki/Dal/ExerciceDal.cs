@@ -16,5 +16,16 @@ namespace Dal
                       select ex;
             return res.FirstOrDefault();
         }
+        public List<exercice> GetExercice()
+        {
+            var res = from ex in context.exercices
+                      select ex;
+            return res.ToList<exercice>();
+        }
+
+        public void AddExercice(exercice exercice)
+        {
+            context.exercices.Add(exercice);
+        }
     }
 }

@@ -40,9 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="A_symptomeBll.cs" />
     <Compile Include="ExerciceBll.cs" />
+    <Compile Include="PathologieBll.cs" />
     <Compile Include="PersonneBll.cs" />
+    <Compile Include="PhaseBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SymptomeBll.cs" />
+    <Compile Include="UtilisateurBll.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dal\Dal.csproj">

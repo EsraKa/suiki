@@ -50,10 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="A_symptomeDal.cs" />
     <Compile Include="BaseDal.cs" />
     <Compile Include="ExerciceDal.cs" />
+    <Compile Include="PathologieDal.cs" />
     <Compile Include="PersonneDal.cs" />
+    <Compile Include="PhaseDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SymptomeDal.cs" />
+    <Compile Include="UtilisateurDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
