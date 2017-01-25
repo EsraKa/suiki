@@ -1,5 +1,6 @@
 package com.suiki.suiki.Dal;
 
+import com.suiki.suiki.Model.Personne;
 import com.suiki.suiki.Model.Utilisateur;
 
 import okhttp3.internal.Util;
@@ -12,6 +13,8 @@ import retrofit2.Response;
  */
 
 public class UtilisateurDal extends BaseDal{
+
+    private Personne profile;
 
     public void getUtilisateur(int id)
     {
@@ -29,19 +32,24 @@ public class UtilisateurDal extends BaseDal{
         });
     }
 
-    public void postUtilisateur(Utilisateur utilisateur)
+    public void connexionUtilisateur(Utilisateur utilisateur)
     {
-        Call<Utilisateur> call = context.utilisateurService.ajouterUtilisateur(utilisateur);
-        call.enqueue(new Callback<Utilisateur>() {
+        Call<Personne> call = context.utilisateurService.connexionUtilisateur(utilisateur);
+        call.enqueue(new Callback<Personne>() {
             @Override
-            public void onResponse(Call<Utilisateur> call, Response<Utilisateur> response) {
-
+            public void onResponse(Call<Personne> call, Response<Personne> response) {
+                profile = response.body();
             }
 
             @Override
-            public void onFailure(Call<Utilisateur> call, Throwable t) {
+            public void onFailure(Call<Personne> call, Throwable t) {
 
             }
         });
+    }
+
+    public Personne getProfile()
+    {
+        return profile;
     }
 }

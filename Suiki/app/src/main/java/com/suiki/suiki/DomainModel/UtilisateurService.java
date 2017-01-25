@@ -1,7 +1,9 @@
 package com.suiki.suiki.DomainModel;
 
+import com.suiki.suiki.Model.Personne;
 import com.suiki.suiki.Model.Utilisateur;
 
+import okhttp3.internal.Util;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -16,5 +18,8 @@ public interface UtilisateurService {
     Call<Utilisateur> getUtilisateur(int id);
 
     @POST("Utilisateur")
-    Call<Utilisateur> ajouterUtilisateur(@Body Utilisateur utilisateur);
+    Call<Personne> connexionUtilisateur (@Body Utilisateur utilisateur);
+
+    @POST("Utilisateur")
+    Call<Utilisateur> ajouterUtilisateu(@Body Utilisateur utilisateur);
 }

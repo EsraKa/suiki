@@ -45,7 +45,7 @@ avertissement 6002: La table/vue 'suiki.dbo.exercice' n'a pas de clé primaire d
     <Key>
       <PropertyRef Name="ID_PERSONNE" />
     </Key>
-    <Property Name="ID_PERSONNE" Type="int" Nullable="false" />
+    <Property Name="ID_PERSONNE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ID_USER" Type="int" Nullable="false" />
     <Property Name="NOM_PERSONNE" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="PRENOM_PERSONNE" Type="varchar" MaxLength="50" Nullable="false" />
@@ -82,7 +82,7 @@ avertissement 6002: La table/vue 'suiki.dbo.phase_exercice' n'a pas de clé prim
     <Key>
       <PropertyRef Name="ID_USER" />
     </Key>
-    <Property Name="ID_USER" Type="int" Nullable="false" />
+    <Property Name="ID_USER" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOM_UTILISATEUR" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="MOT_DE_PASSE" Type="varchar" MaxLength="15" Nullable="false" />
   </EntityType>
