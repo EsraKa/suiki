@@ -7,7 +7,8 @@ var Schema = db.Schema;
 
 var ficheMedical = Schema({
     date : 'Date',
-    pathologie : [{type : Schema.Types.ObjectId , ref : 'Pathologie'}],
+    pathologie : {type : Schema.Types.ObjectId , ref : 'Pathologie'},
+    symptome : [{type : Schema.Types.ObjectId , ref:'Symptome'}],
     phase : {type : Schema.Types.ObjectId , ref : 'Phase'},
     exercice : [{type : Schema.Types.ObjectId , ref:'Exercice'}]
 });
