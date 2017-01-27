@@ -16,6 +16,6 @@ import retrofit2.http.POST;
  */
 
 public interface InscriptionService {
-    @POST
+    @POST("Inscrire")
     Call<Inscription> inscrire(@Body Inscription inscription);
 }

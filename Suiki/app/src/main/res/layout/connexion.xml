@@ -14,7 +14,7 @@
   <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:srcCompat="@mipmap/logo"
+    android:src="@drawable/logo"
     android:id="@+id/logo"
     android:layout_above="@+id/editMail"
     android:layout_alignParentStart="true" />
