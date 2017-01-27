@@ -2,10 +2,10 @@
  * Created by Massil on 25/01/2017.
  */
 var router = require('express').Router();
-var Utilisateur = require('./../model/utilisateur');
-var Personne = require('./../model/personne');
-var Patient = require('./../model/patient');
-var Medecin = require('./../model/medecin');
+var Utilisateur = require('./../model/suikiBdd/utilisateur');
+var Personne = require('./../model/suikiBdd/personne');
+var Patient = require('./../model/suikiBdd/patient');
+var Medecin = require('./../model/suikiBdd/medecin');
 
 var bodyParser = require('body-parser');
 
@@ -49,8 +49,13 @@ router.put('/' , function (req , res) {
         profile : personne._id
     });
 
-    utilisateur.save();
-
+    utilisateur
+        .save(
+            function(data){
+                res.send({status : true , data: data})
+            },function (err) {
+                res.send({status : false , data : err})
+            });
     res.end();
 });
 

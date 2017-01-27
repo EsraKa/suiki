@@ -1,7 +1,7 @@
 /**
  * Created by Massil on 25/01/2017.
  */
-var db = require('./../config/db');
+var db = require('./../../config/db');
 
 var Schema = db.Schema;
 

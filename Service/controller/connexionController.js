@@ -2,8 +2,8 @@
  * Created by Massil on 25/01/2017.
  */
 var router = require('express').Router();
-var Utilisateur = require('./../model/utilisateur');
-var Personne = require('./../model/patient');
+var Utilisateur = require('./../model/suikiBdd/utilisateur');
+var Personne = require('./../model/suikiBdd/patient');
 
 var bodyParser = require('body-parser');
 
@@ -20,7 +20,7 @@ router.post('/' , function (req , res) {
             Personne
                 .find({_id : user.profile})
                 .exec(function(err , personne){
-                    res.send(JSON.stringify({response : true , profile : personne}));
+                    res.send(JSON.stringify({status : true , data : personne}));
                     res.end();
             });
         });
