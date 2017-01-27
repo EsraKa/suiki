@@ -18,16 +18,26 @@ router.post('/' , function (req , res) {
     var nom_utilisateur = req.body.nom_utilisateur;
     var password = req.body.mot_de_passe;
 
+    connecter(nom_utilisateur , password, res);
+
+});
+
+var connecter = function(nom_utilisateur , password , res)
+{
     Utilisateur
-        .find({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
+        .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .exec(function(err , user){
             Personne
                 .find({_id : user.profile})
-                .exec(function(err , personne){
+                .exec(function(personne){
+                    console.log("Personne: " + personne);
                     res.send(JSON.stringify({status : true , data : personne}));
                     res.end();
-            });
+                } , function(err){
+                    res.send(JSON.stringify({status : false , data : err}));
+                    res.end();
+                });
         });
-});
+};
 
 module.exports = router;

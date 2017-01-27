@@ -15,4 +15,6 @@ public class Personne {
     public String prenom;
     @SerializedName("email")
     public String email;
+    @SerializedName("estPatient")
+    public static boolean estPatient = true;
 }

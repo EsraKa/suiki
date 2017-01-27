@@ -2,6 +2,7 @@
  * Created by Massil on 25/01/2017.
  */
 var db = require('./../../config/db');
+var Personne = require('./personne');
 
 var Schema = db.Schema;
 
