@@ -9,6 +9,10 @@ var bodyParser = require('body-parser');
 
 router.use(bodyParser.json());
 
+/**
+ * Connexion d'un utilisateur
+ * Renvoie true si connexion réussie et Profile de l'utilisateur
+ */
 router.post('/' , function (req , res) {
     console.log(req.body);
     var nom_utilisateur = req.body.nom_utilisateur;

@@ -52,9 +52,9 @@ router.put('/' , function (req , res) {
     utilisateur
         .save(
             function(data){
-                res.send({status : true , data: data})
+                res.send(JSON.stringify({status : true , data: data}))
             },function (err) {
-                res.send({status : false , data : err})
+                res.send(JSON.stringify({status : false , data : err}))
             });
     res.end();
 });

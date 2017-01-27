@@ -8,9 +8,14 @@ var db = require('./../../config/db');
 
 var Schema = db.Schema;
 
-var patient = Schema({
+/**
+ * Medecin
+ *  - Personne : Information personnelles du medecin
+ *  - Patient : Liste des patients
+ */
+var medecin = Schema({
     personne : {type : Schema.Types.ObjectId , ref : 'Personne'},
-    patient : {type : Schema.Types.ObjectId , ref : 'Patient'}
+    patient : [{type : Schema.Types.ObjectId , ref : 'Patient'}]
 });
 
-module.exports = db.model('Medecin' , patient);
+module.exports = db.model('Medecin' , medecin);

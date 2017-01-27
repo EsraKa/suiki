@@ -5,6 +5,12 @@ var db = require('./../../config/db');
 
 var Schema = db.Schema;
 
+/**
+ * Utilisauteur:
+ *  - Nom_Utilisateur : Nom choisi par l'utilisateur lors de l'inscription
+ *  - Mot_De_Passe : Mot de passe choisi par l'utilisateur lors de l'inscription
+ *  - Profile : Information personnelles de l'utilisateur
+ */
 var utilisateur = new Schema({
     nom_utilisateur : 'String',
     mot_de_passe : 'String',
