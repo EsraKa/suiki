@@ -1,21 +1,22 @@
 package com.suiki.suiki.DomainModel;
 
-import android.util.Pair;
+import com.suiki.suiki.Model.BddModel.Utilisateur;
+import com.suiki.suiki.Model.HttpModel.HttpReponse;
 
-import com.suiki.suiki.Model.Inscription;
-import com.suiki.suiki.Model.Personne;
-import com.suiki.suiki.Model.Utilisateur;
-
-import okhttp3.internal.Util;
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.POST;
+import retrofit2.http.PUT;
 
 /**
  * Created by Massil on 18/01/2017.
  */
 
 public interface InscriptionService {
-    @POST
-    Call<Inscription> inscrire(@Body Inscription inscription);
+    /**
+     * Permet l'inscription d'un utilisateur
+     * @param utilisateur Utilisateur à inscrire
+     * @return HttpResponse
+     */
+    @PUT("inscription")
+    Call<HttpReponse> inscrire(@Body Utilisateur utilisateur);
 }
