@@ -17,6 +17,10 @@ router.put('/' , function(req , res){
         description : description
     });
     pathologie.save();
+
+
+
+
     res.end();
 });
 
