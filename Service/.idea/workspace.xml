@@ -18,18 +18,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="inscriptionController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/inscriptionController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-              <folding>
-                <element signature="e#1#44#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pathologieController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/pathologieController.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connexionController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connexionController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/connexionController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="321">
+              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding>
                 <element signature="e#1#44#0" expanded="false" />
               </folding>
@@ -168,7 +166,6 @@
         <option value="$PROJECT_DIR$/model/suikiBdd/utilisateur.js" />
         <option value="$PROJECT_DIR$/model/retrofit/httpReponse.js" />
         <option value="$PROJECT_DIR$/model/http/httpReponse.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/controller/inscriptionController.js" />
         <option value="$PROJECT_DIR$/controller/pathologieController.js" />
         <option value="$PROJECT_DIR$/controller/phaseController.js" />
@@ -177,6 +174,7 @@
         <option value="$PROJECT_DIR$/test-unitaire/connexion" />
         <option value="$PROJECT_DIR$/model/suiki/utilisateur.js" />
         <option value="$PROJECT_DIR$/controller/connexionController.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -428,12 +426,12 @@
       <workItem from="1485454835046" duration="806000" />
       <workItem from="1485506403478" duration="12964000" />
       <workItem from="1485545110659" duration="2997000" />
-      <workItem from="1485937501311" duration="1848000" />
+      <workItem from="1485937501311" duration="2073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24413000" />
+    <option name="totallyTimeSpent" value="24638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1316" height="773" extended-state="0" />
@@ -783,14 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -892,11 +882,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/connexionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="321">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
           <folding>
             <element signature="e#1#44#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
