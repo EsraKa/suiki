@@ -2,10 +2,10 @@
  * Created by Massil on 25/01/2017.
  */
 var router = require('express').Router();
-var Utilisateur = require('./../model/suikiBdd/utilisateur');
-var Personne = require('./../model/suikiBdd/personne');
-var Patient = require('./../model/suikiBdd/patient');
-var Medecin = require('./../model/suikiBdd/medecin');
+var Utilisateur = require('./../model/suiki/utilisateur');
+var Personne = require('./../model/suiki/personne');
+var Patient = require('./../model/suiki/patient');
+var Medecin = require('./../model/suiki/medecin');
 
 var bodyParser = require('body-parser');
 
@@ -58,11 +58,11 @@ var savePersonne = function(nom , prenom , email , estPatient , req , res){
 };
 
 /**
- *
- * @param estPatient
- * @param idPersonne
- * @param req
- * @param res
+ * Methode permettant d'enregistrer la personne en tant que medecin ou patient
+ * @param estPatient    Si true, enregistre en patient, sinon
+ * @param idPersonne    Identifiant de la personne qui sera patient ou medecin
+ * @param req           La requete
+ * @param res           Le resultat
  */
 var saveMedecinPatient = function(estPatient , idPersonne , req , res){
     if(estPatient)
@@ -75,6 +75,12 @@ var saveMedecinPatient = function(estPatient , idPersonne , req , res){
     }
 };
 
+/**
+ * Fonction permettant d'enregistrer une Personne en Medecin
+ * @param idPersonne    Identifiant de la personne à ajouter
+ * @param req           La requete
+ * @param res           Le resultat
+ */
 var saveMedecin = function(idPersonne , req , res)
 {
     var medecin = Medecin({
@@ -87,6 +93,12 @@ var saveMedecin = function(idPersonne , req , res)
     });
 };
 
+/**
+ * Fonction permettant d'enregistrer une Personne en Patient
+ * @param idPersonne    Identifiant de la personne à ajouter
+ * @param req           La requete
+ * @param res           Le resultat
+ */
 var savePatient = function(idPersonne , req , res)
 {
     var patient = Patient({
@@ -98,8 +110,15 @@ var savePatient = function(idPersonne , req , res)
         } , function(err){
 
         });
-}
+};
 
+/**
+ * Fonction permettant la sauvegarde d'un utilisateur
+ * @param nom_utilisateur   Pseudo utilisé par l'utilisateur
+ * @param password          Mot de passe de l'utilisateur
+ * @param personneId        L'indentifiant dans la table Personne
+ * @param res               Le resultat
+ */
 var saveUtilisateur = function(nom_utilisateur , password , personneId , res)
 {
     var utilisateur = Utilisateur({

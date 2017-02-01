@@ -2,7 +2,7 @@
  * Created by Massil on 25/01/2017.
  */
 var router = require('express').Router();
-var Symptome = require('./../model/suikiBdd/symptome');
+var Symptome = require('./../model/suiki/symptome');
 
 var bodyParser = require('body-parser');
 

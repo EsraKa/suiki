@@ -5,7 +5,7 @@
  * Created by Massil on 25/01/2017.
  */
 var router = require('express').Router();
-var Phase = require('./../model/suikiBdd/phase');
+var Phase = require('./../model/suiki/phase');
 
 var bodyParser = require('body-parser');
 
