@@ -22,6 +22,7 @@ public class ConnexionDal extends BaseDal {
                 context.connexionService.connexion(identifiant);
         try {
             reponse = connexion.execute().body();
+            
         } catch (IOException e) {
             e.printStackTrace();
         }

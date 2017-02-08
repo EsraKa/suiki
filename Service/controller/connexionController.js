@@ -45,7 +45,8 @@ var connecter = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                res.send(user.profile);
+                res.send({status : true , data :user.profile});
+                res.write("Hello world / connexion !");
                 res.end();
             });
 };
@@ -63,21 +64,29 @@ var connecterMedecin = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                verificationMedecin(user.profile);
-                res.end();
+                verificationMedecin(user.profile , res);
             });
 };
 
 var verificationMedecin = function(personne)
 {
+    console.log(personne);
     Medecin
         .find({})
-        .populate({personne : {nom : personne.nom, prenom : personne.prenom}})
-        .exec(function(err, user){
-            res.send(user.profile);
+        .populate(
+            {
+                path: 'personne',
+                match: {
+                    nom: {$gte: personne.nom},
+                    prenom: {$gte: personne.prenom}
+                }
+            })
+        .exec(function(err, medecin){
+            console.log(medecin.personne.nom);
+            res.send({status : true  , data : medecin.profile});
             res.end();
         });
-}
+};
 
 /**
  * Fonction permettant la connexion à l'application pour un medecin

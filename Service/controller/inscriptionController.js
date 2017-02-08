@@ -23,6 +23,7 @@ router.put('/' , function (req , res) {
  */
 var inscrire = function(req , res)
 {
+    console.log(req.body);
     var nom = req.body.profile.nom;
     var prenom = req.body.profile.prenom;
     var email = req.body.profile.email;
