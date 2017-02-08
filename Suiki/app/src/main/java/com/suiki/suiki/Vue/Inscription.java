@@ -8,8 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.suiki.suiki.Controller.InscriptionController;
-import com.suiki.suiki.Model.Personne;
-import com.suiki.suiki.Model.Utilisateur;
+import com.suiki.suiki.Model.BddModel.Personne;
+import com.suiki.suiki.Model.BddModel.Utilisateur;
 import com.suiki.suiki.R;
 
 import java.io.IOException;
@@ -68,7 +68,7 @@ public class Inscription extends Activity {
         String PASSWORD = password.getText().toString();
         String PSEUDO = pseudo.getText().toString();
 
-        Utilisateur utilisateur = new Utilisateur();
+        /*Utilisateur utilisateur = new Utilisateur();
         utilisateur.NOM_UTILISATEUR = PSEUDO;
         utilisateur.MOT_DE_PASSE = PASSWORD;
 
@@ -78,7 +78,7 @@ public class Inscription extends Activity {
         personne.PRENOM_PERSONNE = PRENOM;
         personne.PATIENT_MEDECIN = "P";
 
-        InscriptionController.Inscrire(utilisateur , personne);
+        InscriptionController.Inscrire(utilisateur , personne);*/
     }
 
 }

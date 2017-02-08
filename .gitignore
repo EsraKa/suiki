@@ -1,4 +1,2 @@
-/Service_Suiki/Model/*
-/Service_Suiki/Service/Web.config
-/Service_Suiki/Service/bin/*
-\Service_Suiki\Service\bin\*
+/Service/node_modules
+/Service/node_modules/*

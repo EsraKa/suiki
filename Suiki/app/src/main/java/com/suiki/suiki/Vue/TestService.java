@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.suiki.suiki.Dal.PersonneDal;
 import com.suiki.suiki.R;
 
 /**
