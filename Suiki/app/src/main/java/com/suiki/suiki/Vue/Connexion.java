@@ -2,11 +2,16 @@ package com.suiki.suiki.Vue;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.suiki.suiki.Controller.ConnexionController;
+import com.suiki.suiki.Model.BddModel.Personne;
+import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.R;
 
 /**
@@ -15,47 +20,64 @@ import com.suiki.suiki.R;
 
 public class Connexion extends Activity{
 
-  private Button connexion = null;
-  private Button inscription = null;
-  private ImageView logo = null;
-  private Intent intent = null;
+    private Button connexion = null;
+    private Button inscription = null;
+    private ImageView logo = null;
+    private Intent intent = null;
+    private HttpConnexion identifiants;
+    private TextView username = null;
+    private TextView password = null;
 
   @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.connexion);
-    logo = (ImageView) findViewById(R.id.logo);
-    Process();
-  }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.connexion);
 
-  private void Process()
-  {
-    Initialisation();
-    Listeners();
-  }
+        Process();
+    }
 
-  private void Initialisation()
-  {
-    this.connexion = (Button)findViewById(R.id.connexion);
-    this.inscription = (Button)findViewById(R.id.inscription);
-  }
+    private void Process()
+    {
+        Initialisation();
+        Listeners();
+    }
 
-  private void Listeners()
-  {
-    this.connexion.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View v) {
-        intent = new Intent(Connexion.this , Calendrier.class);
-        startActivity(intent);
-      }
-    });
+    private void Initialisation()
+    {
+        identifiants = new HttpConnexion();
+        this.logo = (ImageView) findViewById(R.id.logo);
+        this.connexion = (Button)findViewById(R.id.connexion);
+        this.inscription = (Button)findViewById(R.id.inscription);
+        this.username = (TextView) findViewById(R.id.editMail);
+        this.password = (TextView) findViewById(R.id.editPassword);
+    }
 
-    this.inscription.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View v) {
-        intent = new Intent(Connexion.this , Inscription.class);
-        startActivity(intent);
-      }
-    });
-  }
+    private void Listeners()
+    {
+        this.connexion.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                identifiants.nom_utilisateur = username.getText().toString();
+                identifiants.mot_de_passe = password.getText().toString();
+                Personne p = ConnexionController.Connecter(identifiants);
+                if(p != null)
+                {
+                  intent = new Intent(Connexion.this , Calendrier.class);
+                  startActivity(intent);
+                }
+                else
+                {
+                    username.setTextColor(Color.RED);
+                }
+            }
+        });
+
+        this.inscription.setOnClickListener(new View.OnClickListener(){
+          @Override
+          public void onClick(View v) {
+            intent = new Intent(Connexion.this , Inscription.class);
+            startActivity(intent);
+          }
+        });
+    }
 }
