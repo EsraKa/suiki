@@ -1,5 +1,8 @@
-//URL:
+//URL local:
 http://localhost:4500/inscription
+
+//URL dev:
+http://vps368768.ovh.net/inscription
 
 //Data:
 
@@ -9,6 +12,7 @@ http://localhost:4500/inscription
     "profile" : {
       "nom" : "test_nom",
       "prenom" : "test_prenom",
-      "email" : "test_email"
+      "email" : "test_email",
+      "estPatient" : "true"
     }
 }

@@ -6,5 +6,6 @@ router.use('/connexion' , require('./connexionController'));
 router.use('/pathologie' , require('./pathologieController'));
 router.use('/phase' , require('./phaseController'));
 router.use('/symptome' , require('./symptomeController'));
+router.use('/ficheMedical' , require('./fichesMedicalController'));
 
 module.exports = router;
