@@ -1,0 +1,10 @@
+[
+  {
+    "nom" : "Douleur au lambaire",
+    "description" : "Patient ayant mal au dos"
+  },
+  {
+    "nom" : "Douleur au poignés",
+    "description" : "Patient ayant mal au poigné"
+  }
+]
