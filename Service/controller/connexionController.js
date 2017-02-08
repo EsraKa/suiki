@@ -46,6 +46,7 @@ var connecter = function(nom_utilisateur , password , res)
         .populate('profile')
         .exec(function(err , user) {
                 res.send(user.profile);
+                res.write("Hello world / connexion !");
                 res.end();
             });
 };
