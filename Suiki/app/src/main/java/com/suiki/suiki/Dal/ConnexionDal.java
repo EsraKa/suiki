@@ -4,6 +4,8 @@ import com.suiki.suiki.DomainModel.ConnexionService;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.Model.HttpModel.HttpReponse;
 
+import java.io.IOException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -18,17 +20,11 @@ public class ConnexionDal extends BaseDal {
     {
         Call<HttpReponse> connexion =
                 context.connexionService.connexion(identifiant);
-        connexion.enqueue(new Callback<HttpReponse>() {
-            @Override
-            public void onResponse(Call<HttpReponse> call, Response<HttpReponse> response) {
-                reponse = response.body();
-            }
-
-            @Override
-            public void onFailure(Call<HttpReponse> call, Throwable t) {
-                System.err.print(t.getStackTrace());
-            }
-        });
+        try {
+            reponse = connexion.execute().body();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return reponse;
     }
 }

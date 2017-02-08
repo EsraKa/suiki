@@ -63,28 +63,21 @@ var connecterMedecin = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                verificationMedecin(user.profile , res);
+                verificationMedecin(user.profile);
                 res.end();
             });
 };
 
-var verificationMedecin = function(personne , res)
+var verificationMedecin = function(personne)
 {
     Medecin
         .find({})
-        .populate(
-            {
-                path: 'personne',
-                match: {
-                    nom: {$gte: personne.nom},
-                    prenom: {$gte: personne.prenom}
-                }
-            })
+        .populate({personne : {nom : personne.nom, prenom : personne.prenom}})
         .exec(function(err, user){
             res.send(user.profile);
             res.end();
         });
-};
+}
 
 /**
  * Fonction permettant la connexion à l'application pour un medecin
