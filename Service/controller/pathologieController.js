@@ -3,7 +3,7 @@
  */
 
 var router = require('express').Router();
-var Pathologie = require('./../model/suikiBdd/pathologie');
+var Pathologie = require('./../model/suiki/pathologie');
 
 var bodyParser = require('body-parser');
 

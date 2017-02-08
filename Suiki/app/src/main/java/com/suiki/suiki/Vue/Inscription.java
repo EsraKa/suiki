@@ -68,17 +68,17 @@ public class Inscription extends Activity {
         String PASSWORD = password.getText().toString();
         String PSEUDO = pseudo.getText().toString();
 
-        /*Utilisateur utilisateur = new Utilisateur();
-        utilisateur.NOM_UTILISATEUR = PSEUDO;
-        utilisateur.MOT_DE_PASSE = PASSWORD;
-
         Personne personne = new Personne();
-        personne.MAIL = MAIL;
-        personne.NOM_PERSONNE = NOM;
-        personne.PRENOM_PERSONNE = PRENOM;
-        personne.PATIENT_MEDECIN = "P";
+        personne.email = MAIL;
+        personne.nom = NOM;
+        personne.prenom = PRENOM;
 
-        InscriptionController.Inscrire(utilisateur , personne);*/
+        Utilisateur utilisateur = new Utilisateur();
+        utilisateur.nom_utilisateur = PSEUDO;
+        utilisateur.mot_de_passe = PASSWORD;
+        utilisateur.profile = personne;
+
+        InscriptionController.Inscrire(utilisateur);
     }
 
 }

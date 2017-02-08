@@ -1,0 +1,14 @@
+//URL:
+http://localhost:4500/inscription
+
+//Data:
+
+{
+	"nom_utilisateur" : "test_nom_utilisateur",
+    "mot_de_passe" : "test_mot_de_passe",
+    "profile" : {
+      "nom" : "test_nom",
+      "prenom" : "test_prenom",
+      "email" : "test_email"
+    }
+}

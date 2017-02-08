@@ -5,6 +5,12 @@ var db = require('./../../config/db');
 
 var Schema = db.Schema;
 
+/**
+ * Personne
+ *  - Nom : Nom de famille
+ *  - Prenom : Prenom
+ *  - Email : Adresse mail
+ */
 var personne = Schema({
     nom : 'String',
     prenom : 'String' ,

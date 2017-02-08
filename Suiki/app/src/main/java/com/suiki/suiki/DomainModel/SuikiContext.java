@@ -18,7 +18,7 @@ public class SuikiContext {
     public SuikiContext()
     {
         context = new Retrofit.Builder()
-                .baseUrl("http://192.168.43.186/api/")
+                .baseUrl("http://vps368768.ovh.net/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         inscriptionService = context.create(InscriptionService.class);
