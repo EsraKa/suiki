@@ -2,6 +2,7 @@ package com.suiki.suiki.Vue;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.suiki.suiki.Controller.ConnexionController;
+import com.suiki.suiki.Model.BddModel.Personne;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.R;
 
@@ -42,24 +44,32 @@ public class Connexion extends Activity{
 
     private void Initialisation()
     {
+        identifiants = new HttpConnexion();
         this.logo = (ImageView) findViewById(R.id.logo);
         this.connexion = (Button)findViewById(R.id.connexion);
         this.inscription = (Button)findViewById(R.id.inscription);
-        this.username = (TextView) findViewById(R.id.editPseudo);
+        this.username = (TextView) findViewById(R.id.editMail);
         this.password = (TextView) findViewById(R.id.editPassword);
     }
 
     private void Listeners()
     {
         this.connexion.setOnClickListener(new View.OnClickListener(){
-          @Override
-          public void onClick(View v) {
-              identifiants.nom_utilisateur = username.getText().toString();
-              identifiants.mot_de_passe = password.getText().toString();
-              ConnexionController.Connecter(identifiants);
-            intent = new Intent(Connexion.this , Calendrier.class);
-            startActivity(intent);
-          }
+            @Override
+            public void onClick(View v) {
+                identifiants.nom_utilisateur = username.getText().toString();
+                identifiants.mot_de_passe = password.getText().toString();
+                Personne p = ConnexionController.Connecter(identifiants);
+                if(p != null)
+                {
+                  intent = new Intent(Connexion.this , Calendrier.class);
+                  startActivity(intent);
+                }
+                else
+                {
+                    username.setTextColor(Color.RED);
+                }
+            }
         });
 
         this.inscription.setOnClickListener(new View.OnClickListener(){

@@ -15,6 +15,12 @@ public class ConnexionController {
     public static Personne Connecter(HttpConnexion identifiant){
         ConnexionDal dal = new ConnexionDal();
         HttpReponse reponse = dal.Connecter(identifiant);
-        return (Personne)reponse.data;
+        if(reponse.status)
+        {
+            return (Personne)reponse.data;
+        }
+        else
+            return null;
+
     }
 }

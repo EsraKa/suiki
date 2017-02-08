@@ -45,8 +45,7 @@ var connecter = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                res.send({status : true , data :user.profile});
-                res.write("Hello world / connexion !");
+                res.send({status : true , data :user.profile , error : err});
                 res.end();
             });
 };
