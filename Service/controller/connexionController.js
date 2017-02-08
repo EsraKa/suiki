@@ -65,14 +65,14 @@ var connecterMedecin = function(nom_utilisateur , password , res)
         .populate('profile')
         .exec(function(err , user) {
                 verificationMedecin(user.profile , res);
-                res.end();
             });
 };
 
 var verificationMedecin = function(personne , res)
 {
+    console.log(personne);
     Medecin
-        .find({})
+        .find()
         .populate(
             {
                 path: 'personne',
@@ -81,8 +81,9 @@ var verificationMedecin = function(personne , res)
                     prenom: {$gte: personne.prenom}
                 }
             })
-        .exec(function(err, user){
-            res.send(user.profile);
+        .exec(function(err, medecin){
+            console.log(medecin.personne.nom);
+            res.send(medecin.profile);
             res.end();
         });
 };
