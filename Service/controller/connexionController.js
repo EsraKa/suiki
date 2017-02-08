@@ -67,22 +67,15 @@ var connecterMedecin = function(nom_utilisateur , password , res)
             });
 };
 
-var verificationMedecin = function(personne , res)
+var verificationMedecin = function(personneM , res)
 {
-    console.log(personne);
+    console.log(personneM.nom +" Personne dans vérification Medecin \n\n");
     Medecin
-        .find()
-        .populate(
-            {
-                path: 'personne',
-                match: {
-                    nom: {$gte: personne.nom},
-                    prenom: {$gte: personne.prenom}
-                }
-            })
+        .find({personne: personneM._id})
+        //.populate('personne')
         .exec(function(err, medecin){
-            console.log(medecin.personne.nom);
-            res.send(medecin.profile);
+            console.log(medecin);
+            res.send(medecin);
             res.end();
         });
 };
