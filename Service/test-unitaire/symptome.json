@@ -1,0 +1,26 @@
+[
+  {
+    "nom" : "Douleur au lombaires",
+    "description" : "Patient ayant mal au bas du dos"
+  },
+  {
+    "nom" : "Douleur aux cervicales",
+    "description" : "Patient ayant mal en haut du dos"
+  },
+  {
+    "nom" : "Douleur aux chevilles",
+    "description" : "Patient ayant mal à la cheville"
+  },
+  {
+    "nom" : "Douleur aux poignets",
+    "description" : "Patient ayant mal au poignet"
+  },
+  {
+    "nom" : "Douleur aux genoux",
+    "description" : "Patient ayant mal au genoux"
+  },
+  {
+    "nom" : "Douleur aux épaules",
+    "description" : "Patient ayant mal à l'épaule"
+  }
+]

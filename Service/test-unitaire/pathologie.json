@@ -1,0 +1,26 @@
+[
+  {
+    "nom" : "Lombalgie",
+    "description" : "Un état douloureux du rachis lombaire"
+  },
+  {
+    "nom" : "Cervicalgie",
+    "description" : "Douleurs situées au niveau du cou"
+  },
+  {
+    "nom" : "Entorse de cheville",
+    "description" : "Etirement ou déchirement des ligaments de la cheville"
+  },
+  {
+    "nom" : "Entorse du poignet",
+    "description" : "Lésion des ligaments du poignet"
+  },
+  {
+    "nom" : "Ligaments croisés",
+    "description" : "Rupture complète ou partielle d'un ou des deux LC d'un genoux"
+  },
+  {
+    "nom" : "Luxation épaule",
+    "description" : "Instabilité de l'épaule"
+  }
+]
