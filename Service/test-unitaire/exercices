@@ -1,0 +1,13 @@
+//URL local:
+http://localhost:4500/exercice
+
+//URL dev:
+http://vps368768.ovh.net/exercice
+
+//Data:
+
+{
+    "nom" : "Exercice pour les chevilles",
+    "description" : "Objectif soulager la cheville",
+    "lien" : "youtube.com"
+}

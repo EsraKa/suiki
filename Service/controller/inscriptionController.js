@@ -23,6 +23,7 @@ router.put('/' , function (req , res) {
  */
 var inscrire = function(req , res)
 {
+    console.log(req.body);
     var nom = req.body.profile.nom;
     var prenom = req.body.profile.prenom;
     var email = req.body.profile.email;
@@ -51,7 +52,7 @@ var savePersonne = function(nom , prenom , email , estPatient , req , res){
     personne
         .save(function(personneData){
             console.log("Personne data: " + personneData);
-            saveMedecinPatient(req.body.estPatient , personne._id , req , res);
+            saveMedecinPatient(estPatient, personne._id , req , res);
         } , function (err) {
             console.log(err);
         });
@@ -65,6 +66,7 @@ var savePersonne = function(nom , prenom , email , estPatient , req , res){
  * @param res           Le resultat
  */
 var saveMedecinPatient = function(estPatient , idPersonne , req , res){
+    console.log(estPatient);
     if(estPatient)
     {
         savePatient(idPersonne , req , res);

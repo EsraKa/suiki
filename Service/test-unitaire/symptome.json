@@ -20,7 +20,15 @@
     "description" : "Patient ayant mal au genoux"
   },
   {
-    "nom" : "Douleur aux épaules",
-    "description" : "Patient ayant mal à l'épaule"
+    "nom": "Douleur aux épaules",
+    "description": "Patient ayant mal à l'épaule"
+  },
+  {
+    "nom" : "Douleur au lambaire",
+    "description" : "Patient ayant mal au dos"
+  },
+  {
+    "nom" : "Douleur au poignés",
+    "description" : "Patient ayant mal au poigné"
   }
 ]

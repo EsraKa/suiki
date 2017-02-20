@@ -18,5 +18,5 @@ public interface ConnexionService {
      * @return HttpResponse
      */
     @POST("connexion")
-    Call<HttpReponse> connexion(@Body HttpConnexion connexion);
+    Call<HttpReponse> connexion(@Body String connexion);
 }
