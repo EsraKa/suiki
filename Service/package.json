@@ -4,7 +4,8 @@
   "description": "service Node JS Suiki",
   "main": "app.js",
   "scripts": {
-    "test": "node app"
+    "test": "node app",
+    "start": "nodemon app.js"
   },
   "keywords": [
     "node",
@@ -18,5 +19,8 @@
     "express": "^4.14.0",
     "mongoose": "^4.7.8",
     "nodejs": "0.0.0"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0"
   }
 }
