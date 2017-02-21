@@ -19,7 +19,9 @@ rooter.get('/:idPatient/patient' , function (req , res) {
 
 rooter.post('/:idMedecin/medecin', function (req, res) {
     var idMedecin = req.params.idMedecin;
-    console.log(idMedecin);
+    var id_patient = req.body.id_patient;
+
+    getPatient(id_patient.toString(),res);
     getMedecin(idMedecin.toString(),res);
 });
 
@@ -27,12 +29,17 @@ rooter.post('/:idMedecin/medecin', function (req, res) {
 var getPatient = function(patientId , res)
 {
     Patient
-        .find({personne : patientId})
-        .exec(function(err , patient){
-            res.send();
-        })
+        .findById(patientId)
+        .populate("personne")
+        .exec(function (err , data) {
+            console.log("patient information (getPatient) : " + data);
+            console.log(err);
+            res.send({patient: data});
+            res.end();
+        });
 };
 
+// Recupère les information du medecin
 var getMedecin = function (idMedecin, res) {
     Medecin
         .findById(idMedecin)
