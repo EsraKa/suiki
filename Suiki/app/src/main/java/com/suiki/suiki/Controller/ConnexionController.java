@@ -1,6 +1,7 @@
 package com.suiki.suiki.Controller;
 
 import com.suiki.suiki.Dal.ConnexionDal;
+import com.suiki.suiki.Model.BddModel.Patient;
 import com.suiki.suiki.Model.BddModel.Personne;
 import com.suiki.suiki.Model.BddModel.Utilisateur;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
@@ -12,15 +13,14 @@ import com.suiki.suiki.Vue.Connexion;
  */
 
 public class ConnexionController {
-    public static Personne Connecter(HttpConnexion identifiant){
+    public static Patient Connecter(HttpConnexion identifiant){
         ConnexionDal dal = new ConnexionDal();
         HttpReponse reponse = dal.Connecter(identifiant);
         if(reponse.status)
         {
-            return (Personne)reponse.data;
+            return (Patient)reponse.data;
         }
         else
             return null;
-
     }
 }

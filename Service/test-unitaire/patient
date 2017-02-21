@@ -2,3 +2,12 @@ Affiche toute les informations d'un médecin
 
 //URL id (medecin) différent de l'id personne qui correspond au médecin. A faire en POST
 http://localhost:4500/patient/58ac13783ca750191088efd8/medecin
+
+//Patient
+http://localhost:4500/patient/58ac13783ca750191088efd8/medecin
+
+data :
+ {
+ 	"id_patient" : "test_nom_utilisateur",
+     "mot_de_passe" : "test_mot_de_passe"
+ }
