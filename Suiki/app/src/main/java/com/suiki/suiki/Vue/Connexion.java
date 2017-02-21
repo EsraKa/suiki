@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.suiki.suiki.Controller.ConnexionController;
+import com.suiki.suiki.Model.BddModel.Patient;
 import com.suiki.suiki.Model.BddModel.Personne;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.R;
@@ -57,18 +58,19 @@ public class Connexion extends Activity{
         this.connexion.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                identifiants.nom_utilisateur = username.getText().toString();
-                identifiants.mot_de_passe = password.getText().toString();
-                Personne p = ConnexionController.Connecter(identifiants);
-                if(p != null)
-                {
-                  intent = new Intent(Connexion.this , Calendrier.class);
-                  startActivity(intent);
-                }
-                else
-                {
-                    username.setTextColor(Color.RED);
-                }
+            identifiants.nom_utilisateur = username.getText().toString();
+            identifiants.mot_de_passe = password.getText().toString();
+            Patient p = ConnexionController.Connecter(identifiants);
+            if(p != null)
+            {
+                intent = new Intent(Connexion.this , Fiches.class);
+                intent.putExtra("Patient" , p);
+                startActivity(intent);
+            }
+            else
+            {
+                username.setTextColor(Color.RED);
+            }
             }
         });
 

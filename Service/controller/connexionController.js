@@ -1,7 +1,7 @@
 var router = require('express').Router();
 var mongoose = require('mongoose');
 var Utilisateur = require('./../model/suiki/utilisateur');
-var Personne = require('./../model/suiki/patient');
+var Patient = require('./../model/suiki/patient');
 var Medecin = require('./../model/suiki/medecin');
 var ReponseHttp = require('./../model/http/httpReponse');
 
@@ -46,9 +46,8 @@ var connecter = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                var reponse = ReponseHttp.setReponse(true , user.profile , err);
-                res.send(reponse);
-                res.end();
+                verificationPatient(user.profile , res);
+
             });
 };
 
@@ -67,6 +66,18 @@ var connecterMedecin = function(nom_utilisateur , password , res)
         .exec(function(err , user) {
                 verificationMedecin(user.profile , res);
             });
+};
+
+var verificationPatient = function(personneP , res)
+{
+    Patient
+        .findOne({personne : personneP._id})
+        .populate('fiches' , 'personne')
+        .exec(function (err , patient) {
+            var reponse = ReponseHttp.setReponse(true , patient , err);
+            res.send(reponse);
+            res.end();
+        })
 };
 
 /**
