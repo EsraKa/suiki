@@ -79,10 +79,11 @@ var verificationMedecin = function(personneM , res)
     console.log(personneM.nom +" Personne dans vérification Medecin \n\n");
     Medecin
         .find({personne: personneM._id})
-        //.populate('personne')
+        .populate('personne')
+        .populate('patient')
         .exec(function(err, medecin) {
-            console.log(medecin);
-            res.send({status : true , medecin : medecin , error : err});
+            console.log("Information medecin" + medecin);
+            res.send({status : true , medecin : medecin , patient : medecin, error : err});
         });
 };
 

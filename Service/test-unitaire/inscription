@@ -27,3 +27,21 @@ http://vps368768.ovh.net/inscription
        "estPatient" : false
      }
  }
+
+ // Inscription MongoDB
+ {
+ "personne" : {
+    "nom" : "test_nom_medecin",
+    "prenom" : "test_prenom_medecin",
+    "email" : "test_email_medecin"
+    },
+    "patient" : [
+        {
+            "personne" : {
+                "nom" : "test_nom",
+                "prenom" : "test_prenom",
+                "email" : "test_email"
+            }
+        }
+    ]
+ }
