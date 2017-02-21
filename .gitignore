@@ -2,4 +2,4 @@
 /Service/node_modules/*
 
 .idea 
-/Service/.idea
+/Service/.idea/*
