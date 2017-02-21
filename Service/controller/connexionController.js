@@ -46,10 +46,10 @@ var connecter = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                var reponse = ReponseHttp.setReponse(true , user.profile , err);
-                res.send(reponse);
-                res.end();
-            });
+            var reponse = ReponseHttp.setReponse(true , user.profile , err);
+            res.send(reponse);
+            res.end();
+        });
 };
 
 
@@ -65,8 +65,8 @@ var connecterMedecin = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                verificationMedecin(user.profile , res);
-            });
+            verificationMedecin(user.profile , res);
+        });
 };
 
 /**
@@ -79,11 +79,13 @@ var verificationMedecin = function(personneM , res)
     console.log(personneM.nom +" Personne dans vérification Medecin \n\n");
     Medecin
         .find({personne: personneM._id})
-        //.populate('personne')
+        .populate('personne')
+        .populate('patient')
         .exec(function(err, medecin) {
-            console.log(medecin);
-            res.send({status : true , medecin : medecin , error : err});
+            console.log("Information medecin" + medecin);
+            res.send({status : true , medecin : medecin , patient : medecin, error : err});
         });
 };
 
 module.exports = router;
+
