@@ -1,4 +1,16 @@
 {
   "nom" : "Phase algique",
   "description" : "Souffre de douleurs"
+<<<<<<< HEAD
+},
+{
+  "nom" : "Phase de rééducation",
+  "description" : "Phase de récupération pour retrouver un usage normal"
+},
+{
+  "nom" : "Phase de consolidation",
+  "description" : "Phase de stabilisation afin de récupérer l'entièreté de nos capacités physiques"
+ }
+=======
 }
+>>>>>>> c1d8d5794539e96ba45e6127067865e07513aa6a

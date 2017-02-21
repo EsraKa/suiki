@@ -1,0 +1,32 @@
+[
+  {
+    "nom" : "Exercice pour les lombaires",
+    "description" : "Objectif : Soulager les lombaires",
+	"lien" : " Vidéo1"
+  },
+  {
+    "nom" : "Exercice pour les cervicales",
+    "description" : "Objectif : Soulager les cervicales",
+	"lien" : " Vidéo2"
+  },
+  {
+	"nom" : "Exercice pour les chevilles",
+    "description" : "Objectif : Soulager les chevilles",
+	"lien" : " Vidéo3"
+  },
+  {
+    "nom" : "Exercice pour les poignets",
+    "description" : "Objectif : Soulager les poignets",
+	"lien" : " Vidéo4"
+  },
+  {
+    "nom" : "Exercice pour les genoux",
+    "description" : "Objectif : Soulager les genoux",
+	"lien" : " Vidéo5"
+  },
+  {
+    "nom" : "Exercice pour les poignets",
+    "description" : "Objectif : Soulager les épaules",
+	"lien" : " Vidéo6"
+  }
+]
