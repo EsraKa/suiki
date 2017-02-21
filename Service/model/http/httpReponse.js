@@ -7,10 +7,15 @@ var reponse = {
 };
 
 module.exports = {
-    setReponse : function(status , data)
+    setReponse : function(status , data , err)
     {
         reponse.data = data;
         reponse.status = status;
+        reponse.error = err;
+        return reponse;
+    },
+    getReponse : function()
+    {
         return reponse;
     }
 };

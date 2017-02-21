@@ -3,16 +3,17 @@ var mongoose = require('mongoose');
 var Utilisateur = require('./../model/suiki/utilisateur');
 var Personne = require('./../model/suiki/patient');
 var Medecin = require('./../model/suiki/medecin');
+var ReponseHttp = require('./../model/http/httpReponse');
 
 var bodyParser = require('body-parser');
 
 router.use(bodyParser.json());
 
 /**
- * Connexion d'un utilisateur
+ * Connexion d'un utilisateur patient
  * Renvoie true si connexion réussie et Profile de l'utilisateur
  */
-router.post('/' , function (req , res) {
+router.post('/patient' , function (req , res) {
     console.log(req.body);
     var nom_utilisateur = req.body.nom_utilisateur;
     var password = req.body.mot_de_passe;
@@ -22,7 +23,7 @@ router.post('/' , function (req , res) {
 });
 
 /**
- * Connexion d'un medecin
+ * Connexion d'un utilisateur medecin
  * Renvoie true si connexion réussie et liste des patients
  */
 router.post('/medecin' , function (req , res) {
@@ -45,7 +46,8 @@ var connecter = function(nom_utilisateur , password , res)
         .findOne({nom_utilisateur : nom_utilisateur , mot_de_passe: password})
         .populate('profile')
         .exec(function(err , user) {
-                res.send({status : true , data :user.profile , error : err});
+                var reponse = ReponseHttp.setReponse(true , user.profile , err);
+                res.send(reponse);
                 res.end();
             });
 };
@@ -67,43 +69,21 @@ var connecterMedecin = function(nom_utilisateur , password , res)
             });
 };
 
-<<<<<<< HEAD
+/**
+ * Fonction vérifiant qu'une personne est bien un médecin
+ * @param personneM         La personne à vérifier
+ * @param res               Le résultat de la requête
+ */
 var verificationMedecin = function(personneM , res)
-=======
-var verificationMedecin = function(personne)
->>>>>>> 6bd7245b85eea0a02208e364ab3fe6b4d37239bb
 {
     console.log(personneM.nom +" Personne dans vérification Medecin \n\n");
     Medecin
-<<<<<<< HEAD
         .find({personne: personneM._id})
         //.populate('personne')
-        .exec(function(err, medecin){
+        .exec(function(err, medecin) {
             console.log(medecin);
-            res.send(medecin);
-=======
-        .find({})
-        .populate(
-            {
-                path: 'personne',
-                match: {
-                    nom: {$gte: personne.nom},
-                    prenom: {$gte: personne.prenom}
-                }
-            })
-        .exec(function(err, medecin){
-            console.log(medecin.personne.nom);
-            res.send({status : true  , data : medecin.profile});
->>>>>>> 6bd7245b85eea0a02208e364ab3fe6b4d37239bb
-            res.end();
+            res.send({status : true , medecin : medecin , error : err});
         });
 };
-
-/**
- * Fonction permettant la connexion à l'application pour un medecin
- * @param nom_utilisateur   Nom d'utilisateur
- * @param password          Mot de passe de l'utilisateur
- * @param res               Resultat
- */
 
 module.exports = router;
