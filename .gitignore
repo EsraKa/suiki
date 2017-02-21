@@ -1,2 +1,5 @@
 /Service/node_modules
 /Service/node_modules/*
+
+.idea 
+/Service/.idea
