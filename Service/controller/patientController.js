@@ -69,7 +69,7 @@ var AddPatientToListMedecin = function (idMedecin, idPatient, res) {
         });
 };
 
-//, dataPathologie, dataSymptome, dataExercice, dataPhase, res
+// Recupère un patient et on lui associe une fiche médical.
 var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche) {
     Patient
         .findById(idPatient)
