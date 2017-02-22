@@ -31,11 +31,69 @@ router.put('/' , function (req , res) {
     inscrireFiche(req, res);
 })
 
+var inscrireFiche = function(req , res)
+{
+    //console.log(req.body);
+    var nom_pathologie = req.body.pathologie.nom;
+    var  description_pathologie = req.body.pathologie.description;
+
+    // pour avoir un tableau de symptome.
+    var all_symptome = req.body.symptomes;
+
+    var nom_phase = req.body.phase.nom;
+    var  description_phase = req.body.phase.description;
+
+    var all_exercice = req.body.exercices;
+
+    var fiche = FicheMedical ();
+
+
+    addPathologie(nom_pathologie , description_pathologie, fiche, req , res);
+    addSymptome(all_symptome, fiche, req, res);
+    addPhase(nom_phase, description_phase, fiche, req, res);
+    addExercice(all_exercice, fiche, req, res);
+};
+
+var addPathologie = function(nom, description, fiche, req, res){
+    Pathologie
+        .find({
+            nom : nom,
+            description : description })
+        .exec(function(err, pathologieData){
+            console.log("Pathologie data: " + pathologieData);
+            fiche.pathologie = pathologieData;
+            res.end();
+        });
+};
+
+var addSymptome = function(all_symptome, fiche, req, res){
+    getSymptomes(all_symptome, fiche);
+};
+
+var addPhase = function(nom, description, fiche, req, res){
+    Phase
+        .find({
+            nom : nom,
+            description : description })
+        .exec(function(err, phaseData){
+            console.log("Phase data: " + phaseData);
+            fiche.phase = phaseData;
+        });
+};
+
+var addExercice = function(all_exercice, fiche, req, res){
+    getExercices(all_exercice, fiche);
+};
+
+
+
 /**
  * Fonction permettant de retourner l'id de la phase courante du patient
  * @param phase La phase
  * @returns L'identifiant de la phase
  */
+
+//Not Use
 var getPhaseId = function(phase)
 {
     var id = null;
@@ -46,19 +104,19 @@ var getPhaseId = function(phase)
     return id;
 };
 
-var getExercicesId = function(exercices)
+var getExercices = function(exercices, fiche)
 {
-    var exercicesId = [];
     exercices.forEach(function(exercice){
         Exercice
             .find({nom : exercice.nom , description:exercice.description}
             ,function(err , data){
-                exercicesId.push(data._id);
+                fiche.exercice = data;
+                console.log("Exercices data : " + data);
                 });
     });
-    return exercicesId;
 };
 
+//Not Use
 var getPathologieId = function(pathologie){
     var pathologieId = null;
     Pathologie
@@ -69,16 +127,15 @@ var getPathologieId = function(pathologie){
     return pathologieId;
 };
 
-var getSymptomes = function(symptomes)
+var getSymptomes = function(symptomes, fiche)
 {
-    var symptomesId = [];
     symptomes.forEach(function (element) {
         Symptome.find({nom : element.nom}
             , function (err , data) {
-                symptomesId.push(data._id);
+                fiche.symptome = data;
+                console.log("Symptomes data : " + data);
             });
     });
-    return symptomesId;
 };
 
 var createFicheMedical = function(profile)
