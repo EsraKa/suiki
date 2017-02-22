@@ -71,7 +71,8 @@ var verificationPatient = function(personneP , res)
 {
     Patient
         .findOne({personne : personneP._id})
-        .populate('fiches' , 'personne')
+        .populate('fiches')
+        .populate('personne')
         .exec(function (err , patient) {
             var reponse = ReponseHttp.setReponse(true , patient , err);
             res.send(reponse);

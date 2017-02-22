@@ -28,9 +28,7 @@ router.post("/" , function(req , res){
 });
 
 router.put('/' , function (req , res) {
-    var profile = req.body.profile;
-
-    res.end();
+    inscrireFiche(req, res);
 })
 
 /**
