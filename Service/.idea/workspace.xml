@@ -22,12 +22,17 @@
         <entry file="file://$PROJECT_DIR$/controller/connexionController.js">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="594">
               <caret line="18" column="41" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="41" />
 =======
             <state relative-caret-position="1252">
               <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
 >>>>>>> 53109a3fafe9615cf9b45746c5b753fe95678c47
+=======
+            <state relative-caret-position="283">
+              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+>>>>>>> 2f54cca892c1edc85e4645e16f7dddb2bad7d44f
               <folding />
             </state>
           </provider>
@@ -191,6 +196,7 @@
         <option value="$PROJECT_DIR$/test-unitaire/connexion" />
         <option value="$PROJECT_DIR$/controller/exercicesController.js" />
         <option value="$PROJECT_DIR$/test-unitaire/ficheMedical" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/controller/connexionController.js" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/controller/index.js" />
@@ -199,6 +205,10 @@
 =======
         <option value="$PROJECT_DIR$/app.js" />
 >>>>>>> 53109a3fafe9615cf9b45746c5b753fe95678c47
+=======
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/controller/connexionController.js" />
+>>>>>>> 2f54cca892c1edc85e4645e16f7dddb2bad7d44f
       </list>
     </option>
   </component>
@@ -799,12 +809,17 @@
       <workItem from="1487682531632" duration="458000" />
 =======
       <workItem from="1487665685525" duration="2377000" />
+<<<<<<< HEAD
       <workItem from="1487682931313" duration="6000" />
 >>>>>>> 53109a3fafe9615cf9b45746c5b753fe95678c47
+=======
+      <workItem from="1487682931313" duration="136000" />
+>>>>>>> 2f54cca892c1edc85e4645e16f7dddb2bad7d44f
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="45754000" />
   </component>
@@ -813,6 +828,9 @@
     <editor active="false" />
 =======
     <option name="totallyTimeSpent" value="45447000" />
+=======
+    <option name="totallyTimeSpent" value="45577000" />
+>>>>>>> 2f54cca892c1edc85e4645e16f7dddb2bad7d44f
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1302" height="766" extended-state="0" />
@@ -1263,9 +1281,14 @@
 =======
     <entry file="file://$PROJECT_DIR$/controller/connexionController.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1252">
           <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
 >>>>>>> 53109a3fafe9615cf9b45746c5b753fe95678c47
+=======
+        <state relative-caret-position="283">
+          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+>>>>>>> 2f54cca892c1edc85e4645e16f7dddb2bad7d44f
           <folding />
         </state>
       </provider>

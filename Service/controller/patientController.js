@@ -8,7 +8,7 @@ var Patient = require('./../model/suiki/patient');
 var Medecin = require('./../model/suiki/medecin');
 
 
-//rooter.use(bodyParser.json());
+rooter.use(bodyParser.json());
 
 rooter.get('/:idPatient/patient' , function (req , res) {
     var idPatient = req.params.idPatient;
@@ -18,41 +18,39 @@ rooter.get('/:idPatient/patient' , function (req , res) {
 });
 
 rooter.post('/:idMedecin/medecin', function (req, res) {
+    console.log(req.body);
     var idMedecin = req.params.idMedecin;
     var id_patient = req.body.id_patient;
 
-    getPatient(id_patient.toString(),res);
-    getMedecin(idMedecin.toString(),res);
+    getMedecin(idMedecin,id_patient,res);
+
 });
 
-
-var getPatient = function(patientId , res)
-{
-    Patient
-        .findById(patientId)
-        .populate("personne")
-        .exec(function (err , data) {
-            console.log("patient information (getPatient) : " + data);
-            console.log(err);
-            res.send({patient: data});
-            res.end();
-        });
-};
-
-// Recupère les information du medecin
-var getMedecin = function (idMedecin, res) {
+// Recupère les information du medecin et associe un patient à la liste.
+var getMedecin = function (idMedecin, idPatient, res) {
     Medecin
         .findById(idMedecin)
         .populate("personne")
-        .exec(function (err , data) {
-            console.log("medecin information (getMedecin) : " + data);
+        .populate("patient")
+        .exec(function (err , medecin) {
+            console.log("medecin information (getMedecin) : " + medecin);
             console.log(err);
-            res.send({medecin: data});
-            res.end();
-        });
-    /* .exec(function (err , medecin) {
+            Patient
+                .findById(idPatient)
+                .populate("personne")
+                .exec(function (err , patient) {
 
-     });*/
+                    console.log("patient information (getPatient) : " + patient);
+                    console.log(err);
+
+                    medecin.patient.push(patient);
+
+                    console.log("medecin final : " + medecin);
+
+                    res.send({medecin: medecin});
+                });
+
+        });
 };
 
 module.exports = rooter;

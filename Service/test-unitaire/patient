@@ -8,6 +8,5 @@ http://localhost:4500/patient/58ac13783ca750191088efd8/medecin
 
 data :
  {
- 	"id_patient" : "test_nom_utilisateur",
-     "mot_de_passe" : "test_mot_de_passe"
+ 	"id_patient" : "58aaf8862ff7bf0e182bf149"
  }
