@@ -33,3 +33,43 @@ http://vps368768.ovh.net/ficheMedical
         "lien" : "youtube.com"
     }]
  }
+
+ {
+    "profile" :
+    {
+
+    }
+ }
+
+
+
+ // Tester la fonction PUT : permet de recuperer les informations actuellement.
+URL : http://localhost:4500/ficheMedical
+
+{
+    "date" : "08/02/2017",
+    "pathologie" : {
+        "nom" : "Entorse du genou",
+        "descritpion" : "Un état douloureux du rachi lambaire"
+    },
+    "symptomes" : [
+        {
+            "nom" : "Douleur au lambaire",
+            "description" : "Patient ayant mal au dos"
+        },
+        {
+            "nom" : "Douleur au poignés",
+            "description" : "Patient ayant mal au poigné"
+        }
+    ],
+    "phase" : {
+        "nom" : "Phase algique",
+        "description" : "Souffre de douleurs"
+    },
+    "exercices": [
+    {
+        "nom" : "Exercice pour les chevilles",
+        "description" : "Objectif soulager la cheville",
+        "lien" : "youtube.com"
+    }]
+ }

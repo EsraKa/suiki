@@ -7,5 +7,6 @@ router.use('/pathologie' , require('./pathologieController'));
 router.use('/phase' , require('./phaseController'));
 router.use('/symptome' , require('./symptomeController'));
 router.use('/ficheMedical' , require('./fichesMedicalController'));
+router.use('/patient', require('./patientController'));
 
 module.exports = router;

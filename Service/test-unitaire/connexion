@@ -1,8 +1,8 @@
 //URL:
- http://localhost:4500/connexion
+ http://localhost:4500/connexion/patient
 
  //URL dev:
- http://vps368768.ovh.net/connexion
+ http://vps368768.ovh.net/connexion/patient
 
  //Data:
 
@@ -10,6 +10,14 @@
  	"nom_utilisateur" : "test_nom_utilisateur",
      "mot_de_passe" : "test_mot_de_passe"
  }
+
+ //URL:
+  http://localhost:4500/connexion/medecin
+
+  //URL dev:
+  http://vps368768.ovh.net/connexion/medecin
+
+  //Data:
 
  {
   	"nom_utilisateur" : "test_nom_utilisateur_medecin",

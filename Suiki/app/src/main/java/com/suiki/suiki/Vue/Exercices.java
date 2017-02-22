@@ -4,8 +4,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 
+import com.suiki.suiki.Model.BddModel.Exercice;
+import com.suiki.suiki.Model.BddModel.FicheMedical;
 import com.suiki.suiki.R;
 
 /**
@@ -13,54 +19,53 @@ import com.suiki.suiki.R;
  */
 
 public class Exercices extends Activity {
-  private Button calendrier = null;
-  private Button exercice = null;
-  private Button profile = null;
-  private Intent intent = null;
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.exercices);
-    Process();
-  }
+    private ListView listExercice;
+    private ArrayAdapter<Exercice> arrayAdapterExercice;
+    private FicheMedical ficheMedical;
 
-  private void Process(){
-    Initialisation();
-    Listeners();
-  }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.exercices);
+        process();
+    }
 
-  private void Initialisation(){
-    this.calendrier = (Button)findViewById(R.id.calendrier);
-    this.exercice = (Button)findViewById(R.id.exercice);
-    this.profile = (Button)findViewById(R.id.profile);
+    private void process()
+    {
+        initialisation();
+        updateListView();
+        setListener();
+    }
 
-  }
+    private void initialisation()
+    {
+        listExercice = (ListView) findViewById(R.id.listExercice);
+        arrayAdapterExercice = new ArrayAdapter<Exercice>(Exercices.this ,
+                android.R.layout.simple_expandable_list_item_1);
+        ficheMedical = (FicheMedical) getIntent().getSerializableExtra("Fiche");
+    }
 
-  private void Listeners(){
-    this.calendrier.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View v) {
-        intent = new Intent(Exercices.this , Calendrier.class);
-        startActivity(intent);
-      }
-    });
+    private void updateListView()
+    {
+        for(Exercice exercice : ficheMedical.exercices)
+        {
+            arrayAdapterExercice.add(exercice);
+        }
+        listExercice.setAdapter(arrayAdapterExercice);
+    }
 
-    this.exercice.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View v) {
-        intent = new Intent(Exercices.this , Exercices.class);
-        startActivity(intent);
-      }
-    });
-
-    this.profile.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View v) {
-        intent = new Intent(Exercices.this , Profile.class);
-        startActivity(intent);
-      }
-    });
-  }
+    private void setListener()
+    {
+        listExercice.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Exercice exercice = ficheMedical.exercices.get(i);
+                Intent toExercice = new Intent(Exercices.this , ExerciceDetail.class);
+                toExercice.putExtra("Exercice" , exercice);
+                startActivity(toExercice);
+            }
+        });
+    }
 }
 
