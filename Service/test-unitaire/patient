@@ -4,7 +4,7 @@ Affiche toute les informations d'un médecin
 http://localhost:4500/patient/58ac13783ca750191088efd8/medecin
 
 //Patient
-http://localhost:4500/patient/58ac13783ca750191088efd8/medecin
+http://localhost:4500/patient/58ac13783ca750191088efd8/medecin/liste
 
 data :
  {

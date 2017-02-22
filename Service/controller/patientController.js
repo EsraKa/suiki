@@ -6,41 +6,57 @@ var bodyParser = require('body-parser');
 
 var Patient = require('./../model/suiki/patient');
 var Medecin = require('./../model/suiki/medecin');
+var FicheMedical = require('./../model/suiki/ficheMedical');
 
 
 rooter.use(bodyParser.json());
 
-rooter.get('/:idPatient/patient' , function (req , res) {
+rooter.get('/:idPatient/patient/fiche' , function (req , res) {
     var idPatient = req.params.idPatient;
 
 
 
 });
 
-rooter.post('/:idMedecin/medecin', function (req, res) {
+rooter.post('/:idMedecin/medecin/liste', function (req, res) {
     console.log(req.body);
     var idMedecin = req.params.idMedecin;
     var id_patient = req.body.id_patient;
+    var dateFiche = req.body.date;
 
-    getMedecin(idMedecin,id_patient,res);
+    //AddPatientToListMedecin(idMedecin,id_patient,res);
+    AddFicheMedicalToPatient(id_patient, dateFiche);
 
 });
 
+
+var getMedecin = function(idMedecin , res)
+{
+    Patient
+        .findById(patientId)
+        .populate("personne")
+        .exec(function (err , data) {
+            console.log("medecin information (getMedecin) : " + data);
+            console.log(err);
+            return {patient: data};
+        });
+};
+
 // Recupère les information du medecin et associe un patient à la liste.
-var getMedecin = function (idMedecin, idPatient, res) {
+var AddPatientToListMedecin = function (idMedecin, idPatient, res) {
     Medecin
         .findById(idMedecin)
         .populate("personne")
         .populate("patient")
         .exec(function (err , medecin) {
-            console.log("medecin information (getMedecin) : " + medecin);
+            //console.log("medecin information (AddPatientToListMedecin) : " + medecin);
             console.log(err);
             Patient
                 .findById(idPatient)
                 .populate("personne")
                 .exec(function (err , patient) {
 
-                    console.log("patient information (getPatient) : " + patient);
+                    //console.log("patient information (getPatient) : " + patient);
                     console.log(err);
 
                     medecin.patient.push(patient);
@@ -48,6 +64,32 @@ var getMedecin = function (idMedecin, idPatient, res) {
                     console.log("medecin final : " + medecin);
 
                     res.send({medecin: medecin});
+                });
+
+        });
+};
+
+//, dataPathologie, dataSymptome, dataExercice, dataPhase, res
+var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche) {
+    Patient
+        .findById(idPatient)
+        .populate("personne")
+        .populate("fiches")
+        .exec(function (err, patient) {
+            console.log(err);
+            FicheMedical
+                .findById(idMedicalFiche)
+                .populate("pathologie")
+                .populate("symptome")
+                .populate("phase")
+                .populate("exercice")
+                .exec(function (err, fiche) {
+                    console.log("Fiche Medical : " + fiche);
+                    console.log(err);
+
+                    patient.fiches.push(fiche);
+                    console.log("Patient final /w fiche : " + patient);
+                    res.send({patient: patient});
                 });
 
         });
