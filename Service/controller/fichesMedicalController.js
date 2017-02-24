@@ -15,12 +15,15 @@ var Personne = require('./../model/suiki/personne');
 router.use(bodyParser.json());
 
 router.post('/' , function (req , res) {
+    console.log("Ajout d'une fiche");
     inscrireFiche(req, res);
 });
 
 var inscrireFiche = function(req , res)
 {
     var date = req.body.date;
+
+    var profile = req.body.profile;
 
     var nom_pathologie = req.body.pathologie.nom;
     var  description_pathologie = req.body.pathologie.description;
@@ -41,7 +44,10 @@ var inscrireFiche = function(req , res)
         .then(addSymptome(all_symptome, fiche, req, res))
         .then(addPhase(nom_phase, description_phase, fiche, req, res))
         .then(addExercice(all_exercice, fiche, req, res))
-        .then(saveFiche(fiche));
+        .then(saveFiche(fiche))
+        .then(addFicheToPatient(profile , fiche));
+    res.send({fiche : fiche});
+    res.end();
 
 };
 
@@ -97,7 +103,7 @@ var getExercices = function(exercices, fiche)
             ,function(err , data){
                 fiche.exercice = data;
                 console.log("Exercices data : " + data);
-                });
+        });
     });
 };
 
@@ -112,32 +118,6 @@ var getSymptomes = function(symptomes, fiche)
             });
     });
 };
-
-var getPatient = function(profile)
-{
-    var patientF = null;
-    Personne.
-        findOne({
-            nom : profile.nom,
-            prenom : profile.prenom,
-            email : profile.email
-        })
-        .exec(function (err , personne) {
-            console.log(personne);
-            Patient
-                .findOne({
-                    personne : personne._id
-                })
-                .populate('personne')
-                .exec(function (err , patient) {
-                    console.log(patient);
-                    patientF = patient;
-                });
-        });
-    return patientF;
-};
-
-
 
 
 module.exports = router;

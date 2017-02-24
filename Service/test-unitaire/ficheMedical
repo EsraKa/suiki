@@ -31,7 +31,10 @@ http://vps368768.ovh.net/ficheMedical
         "nom" : "Exercice pour les chevilles",
         "description" : "Objectif soulager la cheville",
         "lien" : "youtube.com"
-    }]
+    }],
+    "profile" : {
+        "_id" : "5891e8c98cfacf1b502d49e5"
+    }
  }
 
  {
