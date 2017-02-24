@@ -119,5 +119,7 @@ var getSymptomes = function(symptomes, fiche)
     });
 };
 
+//TODO get fiches médicales d'un patient
+
 
 module.exports = router;
