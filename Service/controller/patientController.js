@@ -11,11 +11,11 @@ var FicheMedical = require('./../model/suiki/ficheMedical');
 
 rooter.use(bodyParser.json());
 
-rooter.get('/:idPatient/patient/fiche' , function (req , res) {
+rooter.post('/:idPatient/patient/fiche' , function (req , res) {
     var idPatient = req.params.idPatient;
+    var idMedecalFicheFiche = req.body.id_fiche;
 
-
-
+    AddFicheMedicalToPatient(idPatient, idMedecalFicheFiche, res);
 });
 
 rooter.post('/:idMedecin/medecin/liste', function (req, res) {
@@ -24,8 +24,8 @@ rooter.post('/:idMedecin/medecin/liste', function (req, res) {
     var id_patient = req.body.id_patient;
     var dateFiche = req.body.date;
 
-    //AddPatientToListMedecin(idMedecin,id_patient,res);
-    AddFicheMedicalToPatient(id_patient, dateFiche);
+    AddPatientToListMedecin(idMedecin,id_patient,res);
+
 
 });
 
@@ -70,7 +70,7 @@ var AddPatientToListMedecin = function (idMedecin, idPatient, res) {
 };
 
 // Recupère un patient et on lui associe une fiche médical.
-var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche) {
+var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche, res) {
     Patient
         .findById(idPatient)
         .populate("personne")
