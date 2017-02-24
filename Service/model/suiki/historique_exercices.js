@@ -15,7 +15,9 @@ var historique = Schema({
     patient : [{type : Schema.Types.ObjectId , ref : 'Patient'}],
     note : 'String',
     commentaire : 'String',
-    date : 'Date'
+    date : 'Date',
+    temps : 'Number',
+    maj : 'Boolean'
 });
 
 module.exports = db.model('HistoriqueExercice' , historique);
