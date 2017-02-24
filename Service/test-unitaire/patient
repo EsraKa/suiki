@@ -10,3 +10,11 @@ data :
  {
  	"id_patient" : "58aaf8862ff7bf0e182bf149"
  }
+
+//Associer une fiche à un patient
+http://localhost:4500/patient/58aaf8862ff7bf0e182bf149/patient/fiche
+
+data :
+{
+    "id_fiche" : "58aef1d05af1ff0e801f80f3"
+}
