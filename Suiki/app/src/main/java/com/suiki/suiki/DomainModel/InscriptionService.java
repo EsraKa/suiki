@@ -1,6 +1,7 @@
 package com.suiki.suiki.DomainModel;
 
 import com.suiki.suiki.Model.BddModel.Utilisateur;
+import com.suiki.suiki.Model.HttpModel.HttpInscription;
 import com.suiki.suiki.Model.HttpModel.HttpReponse;
 
 import retrofit2.Call;
@@ -18,5 +19,5 @@ public interface InscriptionService {
      * @return HttpResponse
      */
     @PUT("inscription")
-    Call<HttpReponse> inscrire(@Body Utilisateur utilisateur);
+    Call<HttpReponse> inscrire(@Body HttpInscription utilisateur);
 }

@@ -7,10 +7,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toolbar;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.internal.LinkedTreeMap;
 import com.suiki.suiki.Model.BddModel.Exercice;
 import com.suiki.suiki.Model.BddModel.FicheMedical;
 import com.suiki.suiki.Model.BddModel.Patient;
+import com.suiki.suiki.Model.BddModel.Personne;
 import com.suiki.suiki.R;
 
 import java.lang.reflect.Array;
@@ -24,6 +29,7 @@ public class Fiches extends Activity {
 
     private ListView listFiches;
     private Patient patient;
+    private Toolbar toolbar;
     private ArrayAdapter<String> arrayAdapter;
 
     @Override
@@ -42,19 +48,28 @@ public class Fiches extends Activity {
 
     private void initialisation()
     {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         listFiches = (ListView) findViewById(R.id.listFiches);
-        patient = (Patient) getIntent().getSerializableExtra("Patient");
+        Gson gson = new Gson();
+        System.out.println(getIntent().getSerializableExtra("Patient"));
+
+        patient = gson.fromJson(
+                gson.toJsonTree(getIntent().getSerializableExtra("Patient"))
+                , Patient.class
+        );
+
         arrayAdapter = new ArrayAdapter<String>(Fiches.this , android.R.layout.simple_expandable_list_item_1);
     }
 
     private void updateList()
     {
-        ArrayList<FicheMedical> fiches = patient.fiches;
-        for(FicheMedical fiche : fiches)
-        {
-            arrayAdapter.add(fiche.date.toString());
+        if(patient.fiches != null && patient.fiches.size() > 0) {
+            ArrayList<FicheMedical> fiches = patient.fiches;
+            for (FicheMedical fiche : fiches) {
+                arrayAdapter.add(fiche.date.toString());
+            }
+            listFiches.setAdapter(arrayAdapter);
         }
-        listFiches.setAdapter(arrayAdapter);
     }
 
     private void setListeners()
@@ -66,6 +81,12 @@ public class Fiches extends Activity {
                 Intent toExercice = new Intent(Fiches.this , Exercices.class);
                 toExercice.putExtra("Fiche" , fiche );
                 startActivity(toExercice);
+            }
+        });
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Coucou");
             }
         });
     }

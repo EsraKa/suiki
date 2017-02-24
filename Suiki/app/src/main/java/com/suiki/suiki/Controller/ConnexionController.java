@@ -1,5 +1,7 @@
 package com.suiki.suiki.Controller;
 
+import android.content.Intent;
+
 import com.suiki.suiki.Dal.ConnexionDal;
 import com.suiki.suiki.Model.BddModel.Patient;
 import com.suiki.suiki.Model.BddModel.Personne;
@@ -13,14 +15,8 @@ import com.suiki.suiki.Vue.Connexion;
  */
 
 public class ConnexionController {
-    public static Patient Connecter(HttpConnexion identifiant){
-        ConnexionDal dal = new ConnexionDal();
-        HttpReponse reponse = dal.Connecter(identifiant);
-        if(reponse.status)
-        {
-            return (Patient)reponse.data;
-        }
-        else
-            return null;
+    public static void Connecter(HttpConnexion identifiant , Intent intentConnexion , Connexion connexionVue){
+        ConnexionDal dal = new ConnexionDal(intentConnexion , connexionVue);
+        dal.Connecter(identifiant );
     }
 }

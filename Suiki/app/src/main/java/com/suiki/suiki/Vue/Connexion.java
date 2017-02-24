@@ -60,17 +60,8 @@ public class Connexion extends Activity{
             public void onClick(View v) {
             identifiants.nom_utilisateur = username.getText().toString();
             identifiants.mot_de_passe = password.getText().toString();
-            Patient p = ConnexionController.Connecter(identifiants);
-            if(p != null)
-            {
-                intent = new Intent(Connexion.this , Fiches.class);
-                intent.putExtra("Patient" , p);
-                startActivity(intent);
-            }
-            else
-            {
-                username.setTextColor(Color.RED);
-            }
+            intent = new Intent(Connexion.this , Fiches.class);
+            ConnexionController.Connecter(identifiants , intent , Connexion.this);
             }
         });
 

@@ -10,6 +10,8 @@ import android.widget.EditText;
 import com.suiki.suiki.Controller.InscriptionController;
 import com.suiki.suiki.Model.BddModel.Personne;
 import com.suiki.suiki.Model.BddModel.Utilisateur;
+import com.suiki.suiki.Model.HttpModel.HttpInscription;
+import com.suiki.suiki.Model.HttpModel.HttpProfile;
 import com.suiki.suiki.R;
 
 import java.io.IOException;
@@ -62,23 +64,17 @@ public class Inscription extends Activity {
     }
 
     public void Inscrire() throws IOException {
-        String NOM = nom.getText().toString();
-        String PRENOM = prenom.getText().toString();
-        String MAIL = mail.getText().toString();
-        String PASSWORD = password.getText().toString();
-        String PSEUDO = pseudo.getText().toString();
+        HttpInscription inscription = new HttpInscription();
+        inscription.profile = new HttpProfile();
 
-        Personne personne = new Personne();
-        personne.email = MAIL;
-        personne.nom = NOM;
-        personne.prenom = PRENOM;
+        inscription.nom_utilisateur = pseudo.getText().toString();
+        inscription.mot_de_passe = password.getText().toString();
 
-        Utilisateur utilisateur = new Utilisateur();
-        utilisateur.nom_utilisateur = PSEUDO;
-        utilisateur.mot_de_passe = PASSWORD;
-        utilisateur.profile = personne;
+        inscription.profile.nom = nom.getText().toString();
+        inscription.profile.prenom = prenom.getText().toString();
+        inscription.profile.email = mail.getText().toString();
 
-        InscriptionController.Inscrire(utilisateur);
+        InscriptionController.Inscrire(inscription);
     }
 
 }

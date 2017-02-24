@@ -3,8 +3,12 @@ package com.suiki.suiki.DomainModel;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.Model.HttpModel.HttpReponse;
 
+import org.json.JSONObject;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.Header;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 
 /**
@@ -17,6 +21,7 @@ public interface ConnexionService {
      * @param connexion identifiant de connexion
      * @return HttpResponse
      */
-    @POST("connexion")
-    Call<HttpReponse> connexion(@Body String connexion);
+    @Headers("Content-Type:application/json")
+    @POST("connexion/patient")
+    Call<HttpReponse> connexion(@Body HttpConnexion connexion);
 }
