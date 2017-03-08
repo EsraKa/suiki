@@ -15,7 +15,7 @@ rooter.post('/:idPatient/patient/fiche' , function (req , res) {
     var idPatient = req.params.idPatient;
     var idMedecalFicheFiche = req.body.id_fiche;
 
-    AddFicheMedicalToPatient(idPatient, idMedecalFicheFiche, res);
+    AddFicheMedicalToPatient(idPatient, idMedecalFicheFiche, res, req);
 });
 
 rooter.post('/:idMedecin/medecin/liste', function (req, res) {
@@ -70,7 +70,7 @@ var AddPatientToListMedecin = function (idMedecin, idPatient, res) {
 };
 
 // Recupère un patient et on lui associe une fiche médical.
-var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche, res) {
+var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche, res, req) {
     Patient
         .findById(idPatient)
         .populate("personne")
@@ -89,9 +89,18 @@ var AddFicheMedicalToPatient = function (idPatient, idMedicalFiche, res) {
 
                     patient.fiches.push(fiche);
                     console.log("Patient final /w fiche : " + patient);
-                    res.send({patient: patient});
+                    saveFicheToPatient(patient,req,res);
+
                 });
 
+        });
+};
+
+var saveFicheToPatient = function (patient, req,res) {
+    return patient
+        .save( function (err, data) {
+            res.send({patient: patient});
+            res.end();
         });
 };
 

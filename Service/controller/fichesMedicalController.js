@@ -14,76 +14,98 @@ var Personne = require('./../model/suiki/personne');
 
 router.use(bodyParser.json());
 
-router.post('/' , function (req , res) {
-    console.log("Ajout d'une fiche");
-    inscrireFiche(req, res);
+router.post('/CreationFiche' , function (req , res) {
+    var fiche = FicheMedical();
+    console.log("Ajout d'une fiche" + req.body);
+    inscrireFiche(fiche, req, res);
 });
 
-var inscrireFiche = function(req , res)
-{
+router.post('/fichesPatient' , function (req , res) {
+    var idPatient = req.body.patient_id;
+
+    getFichesByPatientId(idPatient,req,res);
+});
+
+
+var inscrireFiche = function (fiche, req, res) {
     var date = req.body.date;
-
-    var profile = req.body.profile;
-
-    var nom_pathologie = req.body.pathologie.nom;
-    var  description_pathologie = req.body.pathologie.description;
-
-    // pour avoir un tableau de symptome.
-    var all_symptome = req.body.symptomes;
-
-    var nom_phase = req.body.phase.nom;
-    var  description_phase = req.body.phase.description;
-
-    var all_exercice = req.body.exercices;
-
-    var fiche = FicheMedical ();
 
     fiche.date = date;
 
-    addPathologie(nom_pathologie , description_pathologie, fiche, req , res)
-        .then(addSymptome(all_symptome, fiche, req, res))
-        .then(addPhase(nom_phase, description_phase, fiche, req, res))
-        .then(addExercice(all_exercice, fiche, req, res))
-        .then(saveFiche(fiche))
-        .then(addFicheToPatient(profile , fiche));
-    res.send({fiche : fiche});
-    res.end();
+    addPathologie(fiche, req, res);
 
 };
 
-var saveFiche = function (fiche) {
-    fiche.save();
-    console.log(" \n === FINALY FICHE === \n");
+var saveFiche = function (fiche, req,res) {
+    return fiche
+        .save( function (err, data) {
+            res.send({fiche: fiche});
+            res.end();
+        });
 };
 
-var addPathologie = function(nom, description, fiche, req, res){
+
+var addPathologie = function(fiche, req, res){
+    var nom_pathologie = req.body.pathologie.nom;
+    var description_pathologie = req.body.pathologie.description;
+
     return Pathologie
-        .find({
-            nom : nom,
-            description : description })
+        .findOne({
+            nom : nom_pathologie,
+            description : description_pathologie})
         .exec(function(err, pathologieData){
-            console.log("Pathologie data: " + pathologieData);
             fiche.pathologie = pathologieData;
+            addSymptome(fiche, req, res);
         });
 };
 
-var addSymptome = function(all_symptome, fiche, req, res){
-    getSymptomes(all_symptome, fiche);
+var addSymptome = function(fiche, req, res){
+    var all_symptome = req.body.symptomes;
+    var noms = [];
+    all_symptome.forEach(function (element) {
+        noms.push(element.nom);
+    });
+    Symptome.find({
+        nom : {$in : noms}
+    } , function(err , data){
+        data.forEach(function (element) {
+            fiche.symptome.push(element);
+        });
+        addPhase(fiche, req, res);
+    });
 };
 
-var addPhase = function(nom, description, fiche, req, res){
+var addPhase = function(fiche, req, res){
+    var nom_phase = req.body.phase.nom;
+    var description_phase = req.body.phase.description;
+
     return Phase
-        .find({
-            nom : nom,
-            description : description })
+        .findOne({
+            nom : nom_phase,
+            description : description_phase})
         .exec(function(err, phaseData){
-            console.log("Phase data: " + phaseData);
             fiche.phase = phaseData;
+            addExercice(fiche, req, res)
         });
+
 };
 
-var addExercice = function(all_exercice, fiche, req, res){
-    getExercices(all_exercice, fiche);
+var addExercice = function(fiche, req, res){
+    var all_exercices = req.body.exercices;
+    var noms = [];
+
+    all_exercices.forEach(function (element) {
+        noms.push(element.nom);
+    });
+    Exercice.find({
+        nom : {$in : noms}
+    } , function(err , data){
+        data.forEach(function (element) {
+            fiche.exercice.push(element);
+        });
+        saveFiche(fiche, req, res);
+        console.log(fiche);
+    });
 };
 
 
@@ -94,32 +116,29 @@ var addExercice = function(all_exercice, fiche, req, res){
  * @returns L'identifiant de la phase
  */
 
-
-var getExercices = function(exercices, fiche)
-{
-    return exercices.forEach(function(exercice){
-        Exercice
-            .find({nom : exercice.nom , description:exercice.description}
-            ,function(err , data){
-                fiche.exercice = data;
-                console.log("Exercices data : " + data);
+//TODO get fiches médicales d'un patient
+var getFichesByPatientId = function (idPatient, req, res) {
+    return Patient
+        .findOne({ personne : idPatient})
+        .populate("fiches")
+        .exec(function(err, patientData){
+            console.log("Patient data: " + patientData);
+            getFiches(patientData.fiches,res);
         });
-    });
-};
+}
 
+//fiches est un tableau ou il y a toute les fiches, ensuite on les affiches.
+var getFiches = function (fiches, res) {
 
-var getSymptomes = function(symptomes, fiche)
-{
-    return symptomes.forEach(function (element) {
-        Symptome.find({nom : element.nom}
-            , function (err , data) {
-                fiche.symptome = data;
-                console.log("Symptomes data : " + data);
+    return fiches.forEach(function (element) {
+        FicheMedical.find({ _id : element._id}
+        , function (err, data) {
+                console.log("Fiche médical " + data);
+                res.JSON(data);
             });
     });
 };
 
-//TODO get fiches médicales d'un patient
 
 
 module.exports = router;
