@@ -14,33 +14,16 @@
   <ImageView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:srcCompat="@mipmap/logo"
+    android:src="@mipmap/logo"
     android:id="@+id/logo"
     android:layout_above="@+id/editMail"
     android:layout_alignParentStart="true" />
-
-  <TextView
-    android:text="Pseudonyme :"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/email"
-    android:layout_centerVertical="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginStart="42dp" />
-
-  <TextView
-    android:text="Password"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/password"
-    android:layout_alignBaseline="@+id/editPassword"
-    android:layout_alignBottom="@+id/editPassword"
-    android:layout_alignEnd="@+id/email" />
 
   <EditText
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:inputType="textPassword"
+      android:textAlignment="center"
     android:ems="10"
     android:layout_marginTop="25dp"
     android:id="@+id/editPassword"
@@ -79,6 +62,25 @@
     android:layout_below="@+id/connexion"
     android:layout_alignParentStart="true"
     android:backgroundTint="@color/colorAccent" />
+
+  <TextView
+    android:text="Nom d'utilisateur :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+      android:textAlignment="center"
+    android:id="@+id/email"
+      android:layout_centerVertical="true"
+      android:layout_toStartOf="@+id/editMail"
+      android:layout_marginEnd="13dp" />
+
+  <TextView
+    android:text="Mot de passe :"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/password"
+      android:layout_alignBaseline="@+id/editPassword"
+      android:layout_alignBottom="@+id/editPassword"
+      android:layout_alignEnd="@+id/email" />
 
 
 </RelativeLayout>

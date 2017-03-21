@@ -15,26 +15,22 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".Vue.Connexion">
 
-    </activity>
-    <activity android:name=".Vue.Profile">
+    <activity android:name=".Vue.Connexion"/>
 
-    </activity>
-    <activity android:name=".Vue.Inscription">
+    <activity android:name=".Vue.Profile"/>
 
-    </activity>
-    <activity android:name=".Vue.Exercices">
+    <activity android:name=".Vue.Inscription"/>
 
-    </activity>
-    <activity android:name=".Vue.Calendrier">
+    <activity android:name=".Vue.FicheDetail"/>
 
-    </activity>
-    <activity android:name=".Vue.Menu">
+    <activity android:name=".Vue.Calendrier"/>
 
-    </activity>
+    <activity android:name=".Vue.Menu"/>
 
-    <activity android:name=".Vue.Fiches"></activity>
+    <activity android:name=".Vue.ExerciceDetail"/>
+
+    <activity android:name=".Vue.AllFiches"/>
 
   </application>
 

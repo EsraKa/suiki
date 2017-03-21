@@ -11,11 +11,14 @@ import com.suiki.suiki.R;
 
 public class ExerciceDetail extends Activity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.exercices);
+        setContentView(R.layout.exercice_detail);
+    }
+
+    private void initialisation()
+    {
+
     }
 }

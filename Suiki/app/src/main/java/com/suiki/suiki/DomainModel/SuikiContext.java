@@ -14,6 +14,7 @@ public class SuikiContext {
 
     public InscriptionService inscriptionService;
     public ConnexionService connexionService;
+    public HistoriqueMedicalService historiqueMedicalService;
 
     public SuikiContext()
     {
@@ -23,5 +24,6 @@ public class SuikiContext {
                 .build();
         inscriptionService = context.create(InscriptionService.class);
         connexionService = context.create(ConnexionService.class);
+        historiqueMedicalService = context.create(HistoriqueMedicalService.class);
     }
 }

@@ -1,6 +1,9 @@
 package com.suiki.suiki.Dal;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
@@ -40,10 +43,26 @@ public class ConnexionDal extends BaseDal {
         connexion.enqueue(new Callback<HttpReponse>() {
             @Override
             public void onResponse(Call<HttpReponse> call, Response<HttpReponse> response) {
-                reponse = response.body();
-                Patient p = new Patient();
-                intentConnexion.putExtra("Patient" , (LinkedTreeMap<String , Object>)reponse.data);
-                connexionVue.startActivity(intentConnexion);
+                try {
+                    reponse = response.body();
+                    Patient p = new Patient();
+                    intentConnexion.putExtra("Patient", (LinkedTreeMap<String, Object>) reponse.data);
+                    connexionVue.startActivity(intentConnexion);
+                }
+                catch(NullPointerException e)
+                {
+                    new AlertDialog.Builder(connexionVue)
+                            .setTitle("ERREUR")
+                            .setMessage("Impossible de se connecter.")
+                            .setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            })
+                            .show();
+                }
+
             }
 
             @Override

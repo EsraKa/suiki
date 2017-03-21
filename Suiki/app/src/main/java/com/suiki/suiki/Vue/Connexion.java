@@ -2,7 +2,6 @@ package com.suiki.suiki.Vue;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,8 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.suiki.suiki.Controller.ConnexionController;
-import com.suiki.suiki.Model.BddModel.Patient;
-import com.suiki.suiki.Model.BddModel.Personne;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.R;
 
@@ -60,7 +57,7 @@ public class Connexion extends Activity{
             public void onClick(View v) {
             identifiants.nom_utilisateur = username.getText().toString();
             identifiants.mot_de_passe = password.getText().toString();
-            intent = new Intent(Connexion.this , Fiches.class);
+            intent = new Intent(Connexion.this , AllFiches.class);
             ConnexionController.Connecter(identifiants , intent , Connexion.this);
             }
         });

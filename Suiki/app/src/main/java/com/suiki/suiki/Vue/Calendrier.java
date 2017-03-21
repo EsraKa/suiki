@@ -52,7 +52,7 @@ public class Calendrier extends Activity{
     this.exercice.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
-        intent = new Intent(Calendrier.this , Exercices.class);
+        intent = new Intent(Calendrier.this , FicheDetail.class);
         startActivity(intent);
       }
     });

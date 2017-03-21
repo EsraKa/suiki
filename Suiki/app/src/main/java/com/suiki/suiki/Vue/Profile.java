@@ -50,7 +50,7 @@ public class Profile extends Activity {
     this.exercice.setOnClickListener(new View.OnClickListener(){
       @Override
       public void onClick(View v) {
-        intent = new Intent(Profile.this , Exercices.class);
+        intent = new Intent(Profile.this , FicheDetail.class);
         startActivity(intent);
       }
     });
