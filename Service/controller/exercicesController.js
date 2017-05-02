@@ -31,6 +31,4 @@ var getPatient = function(profileId , res)
         });
 };
 
-//TODO get exercices d'un patient
-
 module.exports = router;

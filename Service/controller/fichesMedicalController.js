@@ -108,18 +108,9 @@ var addExercice = function(fiche, req, res){
     });
 };
 
-
-
-/**
- * Fonction permettant de retourner l'id de la phase courante du patient
- * @param phase La phase
- * @returns L'identifiant de la phase
- */
-
-//TODO get fiches médicales d'un patient
 var getFichesByPatientId = function (idPatient, req, res) {
     return Patient
-        .findOne({ personne : idPatient})
+        .findOne({ patient : idPatient})
         .populate("fiches")
         .exec(function(err, patientData){
             console.log("Patient data: " + patientData);
