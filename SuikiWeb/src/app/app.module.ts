@@ -8,6 +8,20 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
 import { LogoComponent } from './logo/logo.component';
+import {RouterModule, Routes} from "@angular/router";
+import { PatientListComponent } from './patient-list/patient-list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FicheMedicaleComponent } from './fiche-medicale/fiche-medicale.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+const appRoutes: Routes = [
+  { path: '', component: LoginComponent },
+  { path: 'inscription', component: RegisterComponent },
+  { path: 'patient', component: PatientListComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: '**', component: PageNotFoundComponent },
+
+];
 
 @NgModule({
   declarations: [
@@ -15,13 +29,23 @@ import { LogoComponent } from './logo/logo.component';
     LoginComponent,
     NavbarComponent,
     RegisterComponent,
-    LogoComponent
+    LogoComponent,
+    PatientListComponent,
+    ProfileComponent,
+    FicheMedicaleComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
+
+  exports: [
+    RouterModule
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
