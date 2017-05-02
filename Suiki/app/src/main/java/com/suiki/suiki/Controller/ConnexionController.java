@@ -1,5 +1,6 @@
 package com.suiki.suiki.Controller;
 
+import android.app.Activity;
 import android.content.Intent;
 
 import com.suiki.suiki.Dal.ConnexionDal;
@@ -15,8 +16,9 @@ import com.suiki.suiki.Vue.Connexion;
  */
 
 public class ConnexionController {
-    public static void Connecter(HttpConnexion identifiant , Intent intentConnexion , Connexion connexionVue){
-        ConnexionDal dal = new ConnexionDal(intentConnexion , connexionVue);
+    private static ConnexionDal dal;
+    public static void Connecter(HttpConnexion identifiant , Intent intentConnexion , Connexion connexionVue ){
+        dal = new ConnexionDal(intentConnexion , connexionVue);
         dal.Connecter(identifiant );
     }
 }

@@ -17,7 +17,7 @@ public class FicheMedical implements Serializable{
     @SerializedName("pathologie")
     public Pathologie pathologie;
     @SerializedName("symptome")
-    public Array symptomes;
+    public ArrayList<Symptome> symptomes;
     @SerializedName("phase")
     public Phase phase;
     @SerializedName("exercice")

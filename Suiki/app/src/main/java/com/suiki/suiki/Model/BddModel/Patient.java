@@ -13,6 +13,6 @@ import java.util.ArrayList;
 public class Patient implements Serializable {
     @SerializedName("personne")
     public Personne personne;
-    @SerializedName("fiches")
+    @SerializedName("all_fiches")
     public ArrayList fiches;
 }

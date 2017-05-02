@@ -7,6 +7,6 @@ var app = express();
 app.use('/',require("./controller"));
 
 //Server sur écoute, port 4500.
-app.listen(4500, function(){
+app.listen(80, function(){
 	console.log("Server is up");
 });
