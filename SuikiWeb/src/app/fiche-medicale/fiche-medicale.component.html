@@ -1,3 +1,94 @@
-<p>
-  fiche-medicale works!
-</p>
+<div class="col-md-3">
+  <div class="form-group" id="colpatient">
+    <div class="barPatient">
+      <p>Mes patients</p>
+    </div>
+    <div class="form-group has-feedback">
+
+      <input type="text" class="form-control" placeholder="Search">
+      <i class="glyphicon glyphicon-search form-control-feedback"></i>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="col-md-9">
+  <div class="profilename">
+    <div class="row">
+      <div class="col-md-4">
+        <img class="img-responsive img-circle" src="../../assets/images/profile.png" style="width: 100px">
+      </div>
+      <div class="col-md-4">
+        <h2>Nom</h2><h3> Prénom</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="/profile" role="tab">Profile</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="/fiche" role="tab">Fiche Medicale</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane" id="/profile" role="tabpanel">
+
+
+    </div>
+    <div class="tab-pane active" id="#fiche" role="tabpanel">
+
+      <div class="form-group" >
+        <div class="col-sm-12" style="margin-bottom: 10px;">
+          <div class="col-sm-3">
+            <label>Pathologie :</label>
+          </div>
+          <div class="col-sm-3">
+            <input type="text" name="pathologie" placeholder="Pathologie" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="btn btn-info" role="button">Ajouter pathologie</a><br>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-group" >
+        <div class="col-sm-12" style="margin-bottom: 10px;">
+          <div class="col-sm-3">
+            <label>Symptomes :</label>
+          </div>
+          <div class="col-sm-3">
+            <input type="text" name="symptome" placeholder="Symptome" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="btn btn-info" role="button">Ajouter symptome</a> <br>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12" style="margin-bottom: 10px;">
+          <div class="col-sm-3">
+            <label>Exercices :</label>
+          </div>
+          <div class="col-sm-3">
+            <input type="text" name="exercice" placeholder="exercices" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <a href="#" class="btn btn-info" role="button">Ajouter exercice</a><br>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+

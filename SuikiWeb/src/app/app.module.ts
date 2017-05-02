@@ -19,6 +19,7 @@ const appRoutes: Routes = [
   { path: 'inscription', component: RegisterComponent },
   { path: 'patient', component: PatientListComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'fiche', component: FicheMedicaleComponent },
   { path: '**', component: PageNotFoundComponent },
 
 ];
