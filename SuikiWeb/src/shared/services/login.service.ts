@@ -13,7 +13,7 @@ export class LoginService {
     let options = new RequestOptions({ headers: headers });
 
     return this.http.post('/login', body, options)
-      .do(data => console.log(data.json())) // eyeball results in the console
+      .do(data => console.log(data.json()))
       .map(res => res.json())
       .catch(this.handleError);
   }
