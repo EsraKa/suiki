@@ -13,6 +13,7 @@ import { PatientListComponent } from './patient-list/patient-list.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FicheMedicaleComponent } from './fiche-medicale/fiche-medicale.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     PatientListComponent,
     ProfileComponent,
     FicheMedicaleComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

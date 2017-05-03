@@ -1,7 +1,13 @@
 .navbar-default{
   background-color: #239bff;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
 }
 
 .navbar-default a{
   color: #ffffff;;
+}
+
+.container{
+
 }

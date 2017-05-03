@@ -9,7 +9,7 @@ body{
 }
 
 .profilename{
-  background-color: #c90012;
+  background-color: #1584b7;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -19,4 +19,46 @@ body{
   padding-bottom: 10px;
   background-color: #F5CE4E;
   font-size: 30PX;
+}
+
+#colpatient {
+  background-color: whitesmoke;
+  padding-right: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  height: 677px;
+}
+
+/*.col-md-3 .col-md-9{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+@media (min-width: 992px){
+    .col-md-3 .col-md-9 {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+  }
+}*/
+
+.tab-content{
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+
+.barPatient{
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.footer{
+  background-color: #070744;
+  padding-top: 20px;
+}
+
+.footer p{
+  color: white;
+  text-align: center;
 }
