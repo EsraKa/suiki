@@ -32,6 +32,8 @@
 
     <activity android:name=".Vue.AllFiches"/>
 
+    <activity android:name=".Vue.Note"/>
+
   </application>
 
 </manifest>

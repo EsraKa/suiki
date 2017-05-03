@@ -1,7 +1,9 @@
 package com.suiki.suiki.Vue;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.suiki.suiki.Controller.ConnexionController;
+import com.suiki.suiki.Model.Constants.Session;
 import com.suiki.suiki.Model.HttpModel.HttpConnexion;
 import com.suiki.suiki.R;
 
@@ -26,6 +29,9 @@ public class Connexion extends Activity{
     private TextView username = null;
     private TextView password = null;
 
+    private SharedPreferences preferences;
+    private SharedPreferences.Editor editSession;
+
   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +43,14 @@ public class Connexion extends Activity{
     private void Process()
     {
         Initialisation();
+        setSession();
         Listeners();
+    }
+
+    private void setSession()
+    {
+        preferences = getSharedPreferences(Session.PREFERENCES , Context.MODE_PRIVATE);
+        editSession = preferences.edit();
     }
 
     private void Initialisation()
@@ -58,7 +71,7 @@ public class Connexion extends Activity{
             identifiants.nom_utilisateur = username.getText().toString();
             identifiants.mot_de_passe = password.getText().toString();
             intent = new Intent(Connexion.this , AllFiches.class);
-            ConnexionController.Connecter(identifiants , intent , Connexion.this);
+            ConnexionController.Connecter(identifiants , intent , Connexion.this , editSession);
             }
         });
 

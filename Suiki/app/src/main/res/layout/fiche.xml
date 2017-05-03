@@ -1,108 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal">
-    <android.support.v7.widget.Toolbar
+    <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/suikiBlue"
         android:title="Liste des exercices"
-        ></android.support.v7.widget.Toolbar>
-
-    <ScrollView
+        ></Toolbar>
+        <!-- Layout contenant tous les elements -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
 
-        <LinearLayout
+        <!-- Layout Phase -->
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/phase_icon"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
 
             <TextView
-                android:text="Phase"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/phase"
-                android:textAlignment="center"/>
-
-            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:textAlignment="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/phaseNom"
-                    android:textAlignment="center"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/phaseDescription"
-                    android:textAlignment="center"/>
-
-            </LinearLayout>
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/cpb_red_dark"
+                android:textSize="25dp"
+                android:text="Phase 1"
+                android:id="@+id/phaseNom"/>
 
             <TextView
-                android:text="Pathologie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/pathologie"
-                android:textAlignment="center"/>
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="45dp"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:text="Description de la phase 1"
+                android:id="@+id/phaseDescription"/>
+        </RelativeLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pathologieNom" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/pathologieDescription" />
-            </LinearLayout>
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/expandable_list_view"></ExpandableListView>
 
-            <TextView
-                android:text="Symptomes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/symptome"
-                android:textAlignment="center"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <ListView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:id="@+id/listSymptomes" />
-
-            </LinearLayout>
-
-            <TextView
-                android:text="Exercices"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/exercices"
-                android:textAlignment="center"/>
-
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/listExercice"
-                android:textAlignment="center">
-            </ListView>
-
-        </LinearLayout>
-    </ScrollView>
+       </LinearLayout>
 
 </LinearLayout>

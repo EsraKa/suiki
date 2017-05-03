@@ -12,6 +12,8 @@ import java.util.Date;
  */
 
 public class FicheMedical implements Serializable{
+    @SerializedName("_id")
+    public String id;
     @SerializedName("date")
     public Date date;
     @SerializedName("pathologie")

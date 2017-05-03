@@ -66,7 +66,22 @@ public class FicheCustomAdapter extends ArrayAdapter<InfoFiche> {
 
         viewHolder.text1.setText(info.getPhase());
         viewHolder.text2.setText(info.getDate());
-        viewHolder.image.setTag(position);
+        switch (info.getPhase())
+        {
+            case "Phase 1":
+                viewHolder.image.setImageResource(R.mipmap.phase1);
+                convertView.setBackgroundResource(R.color.suikiFichesColorYellow);
+                break;
+            case "Phase 2":
+                viewHolder.image.setImageResource(R.mipmap.phase2);
+                convertView.setBackgroundResource(R.color.suikiFichesColorBlue);
+                break;
+            case "Phase 3":
+                viewHolder.image.setImageResource(R.mipmap.phase3);
+                convertView.setBackgroundResource(R.color.suikiFichesColorRed);
+                break;
+        }
+
         return convertView;
     }
 }

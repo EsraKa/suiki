@@ -76,5 +76,4 @@ public class Inscription extends Activity {
 
         InscriptionController.Inscrire(inscription);
     }
-
 }
