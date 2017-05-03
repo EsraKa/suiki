@@ -2,6 +2,7 @@ package com.suiki.suiki.Controller;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 
 import com.suiki.suiki.Dal.ConnexionDal;
 import com.suiki.suiki.Model.BddModel.Patient;
@@ -17,8 +18,9 @@ import com.suiki.suiki.Vue.Connexion;
 
 public class ConnexionController {
     private static ConnexionDal dal;
-    public static void Connecter(HttpConnexion identifiant , Intent intentConnexion , Connexion connexionVue ){
+    public static void Connecter(HttpConnexion identifiant , Intent intentConnexion ,
+                                 Connexion connexionVue , SharedPreferences.Editor editSession){
         dal = new ConnexionDal(intentConnexion , connexionVue);
-        dal.Connecter(identifiant );
+        dal.Connecter(identifiant , editSession);
     }
 }

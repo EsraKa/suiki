@@ -45,14 +45,15 @@ public class SymptomeCustomAdapter extends ArrayAdapter<Symptome> {
         Symptome info = getItem(position);
         final View result;
         ViewHolder viewHolder ;
+        TextView titre;
 
         if(convertView == null)
         {
             viewHolder = new ViewHolder();
             LayoutInflater inflater = LayoutInflater.from(context);
-            convertView = inflater.inflate(R.layout.symptome_detail , parent, false);
-            viewHolder.nom = (TextView) convertView.findViewById(R.id.nom);
-            viewHolder.description = (TextView) convertView.findViewById(R.id.description);
+            convertView = inflater.inflate(R.layout.symptome_layout , parent , false);
+            viewHolder.nom = (TextView) convertView.findViewById(R.id.symptomeNom);
+            viewHolder.description = (TextView) convertView.findViewById(R.id.symptomeDescription);
             result = convertView;
             convertView.setTag(viewHolder);
         }

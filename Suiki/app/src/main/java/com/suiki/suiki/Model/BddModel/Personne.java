@@ -9,6 +9,8 @@ import org.simpleframework.xml.Element;
  */
 
 public class Personne {
+    @SerializedName("_id")
+    public String id;
     @SerializedName("nom")
     public String nom;
     @SerializedName("prenom")

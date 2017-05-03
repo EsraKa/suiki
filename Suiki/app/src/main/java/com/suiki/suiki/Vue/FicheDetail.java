@@ -1,22 +1,26 @@
 package com.suiki.suiki.Vue;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.suiki.suiki.Model.BddModel.Exercice;
 import com.suiki.suiki.Model.BddModel.FicheMedical;
-import com.suiki.suiki.Model.BddModel.Symptome;
-import com.suiki.suiki.Model.Helper.Adapters.SymptomeCustomAdapter;
-import com.suiki.suiki.Model.Helper.DrawerItemClickListener;
+import com.suiki.suiki.Model.Helper.Adapters.ExpandableAdapter;
+import com.suiki.suiki.Model.IntentModel.ListExercice;
 import com.suiki.suiki.R;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by Esra on 21/01/2017.
@@ -24,18 +28,26 @@ import java.util.List;
 
 public class FicheDetail extends Activity {
 
-    private TextView phaseNom;
-    private TextView phaseDescription;
     private TextView pathologieNom;
     private TextView pathologieDescription;
+    private CircleImageView phaseIcon;
 
-    private ListView listSymptomes;
-    private ListView listExercice;
+    private ExpandableListView expandableListView;
+    private ExpandableAdapter expandableAdapter;
 
-    private ArrayAdapter<String> arrayAdapterExercice;
-    private SymptomeCustomAdapter symptomeAdapter;
+    private HashMap<String , List<Object>> listDataChild;
+
+    private ArrayList<String> listDataHeader;
+    private ArrayList<Object> listDataSymptomes;
+    private ArrayList<Object> listDataExercices;
 
     private FicheMedical ficheMedical;
+
+    SharedPreferences preferences ;
+
+    SharedPreferences.Editor editor;
+
+    private final String SESSION = "SESSION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +62,37 @@ public class FicheDetail extends Activity {
     private void process()
     {
         initialisation();
+        prepareListData();
         update();
         setListener();
     }
+
+
+    private void prepareListData()
+    {
+        listDataHeader = new ArrayList<>();
+        listDataExercices = new ArrayList<>();
+        listDataSymptomes = new ArrayList<>();
+        listDataChild = new HashMap<>();
+
+        listDataHeader.add("Symptomes");
+        listDataHeader.add("Exercices");
+
+        listDataExercices.addAll(ficheMedical.exercices);
+        listDataSymptomes.addAll(ficheMedical.symptomes);
+
+        System.out.println(listDataExercices);
+        System.out.println(listDataSymptomes);
+
+        listDataChild.put(listDataHeader.get(0) , listDataSymptomes);
+        listDataChild.put(listDataHeader.get(1) , listDataExercices);
+
+        expandableAdapter = new ExpandableAdapter(this , listDataHeader , listDataChild);
+        expandableListView.setAdapter(expandableAdapter);
+
+    }
+
+
 
     /**
      * Initialisation de l'application
@@ -64,68 +104,47 @@ public class FicheDetail extends Activity {
         ficheMedical = (FicheMedical) getIntent().getSerializableExtra("FicheDetail");
 
         // Initialisation des libellés
-        phaseNom = (TextView) findViewById(R.id.phaseNom);
-        phaseDescription = (TextView) findViewById(R.id.phaseDescription);
+        pathologieNom = (TextView) findViewById(R.id.phaseNom);
+        pathologieDescription = (TextView) findViewById(R.id.phaseDescription);
 
-        pathologieNom = (TextView) findViewById(R.id.pathologieNom);
-        pathologieDescription = (TextView) findViewById(R.id.pathologieDescription);
+        //Initialisation de l'image de la phase
+        phaseIcon = (CircleImageView) findViewById(R.id.phase_icon);
 
-        //Initialisation de la liste des symptomes
-        listSymptomes = (ListView) findViewById(R.id.listSymptomes);
-        symptomeAdapter = new SymptomeCustomAdapter(ficheMedical.symptomes , FicheDetail.this );
-
-        //Initialisation de la liste des exercices
-        listExercice = (ListView) findViewById(R.id.listExercice);
-        arrayAdapterExercice = new ArrayAdapter<String>(FicheDetail.this ,
-                android.R.layout.simple_expandable_list_item_1);
+        //Initialisation des liste déroulantes pour symptomes et exercices
+        expandableListView = (ExpandableListView) findViewById(R.id.expandable_list_view);
     }
 
     //Lancement de tous les libelles
     private void update()
     {
         updateLibelles();
-        updateListViews();
+        updateImage();
+    }
+
+    private void updateImage()
+    {
+        switch (ficheMedical.phase.nom)
+        {
+            case "Phase 1":
+                phaseIcon.setImageResource(R.mipmap.phase1);
+                break;
+            case "Phase 2":
+                phaseIcon.setImageResource(R.mipmap.phase2);
+                break;
+            case "Phase 3":
+                phaseIcon.setImageResource(R.mipmap.phase3);
+                break;
+        }
     }
 
     //Mise a jour/Remplissage des libelles
     private void updateLibelles()
     {
         //Mise a jour des libelles phase
-        phaseNom.setText(ficheMedical.phase.nom);
-        phaseDescription.setText(ficheMedical.phase.description);
-
-        //Mise a jour des libelles pathologie
         pathologieNom.setText(ficheMedical.pathologie.nom);
         pathologieDescription.setText(ficheMedical.pathologie.description);
 
     }
-
-    /**
-     * Mise à jour du composant ListView
-     */
-    private void updateListViews()
-    {
-        updateListSymptomes();
-        updateListExercices();
-    }
-
-    // Mise à jour/Remplissage de la liste des symptomes
-    private void updateListSymptomes()
-    {
-        listSymptomes.setAdapter(symptomeAdapter);
-    }
-
-    // Mise à jour/Remplissage de la liste des exercices
-    private void updateListExercices()
-    {
-        for(Exercice exercice : ficheMedical.exercices)
-        {
-            arrayAdapterExercice.add(exercice.nom);
-        }
-        System.out.print(arrayAdapterExercice.getCount());
-        listExercice.setAdapter(arrayAdapterExercice);
-    }
-
 
     /**
      * Ajout de listeners à la ListView fiche Liste Exercice
@@ -133,13 +152,18 @@ public class FicheDetail extends Activity {
      */
     private void setListener()
     {
-        listExercice.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener(){
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Exercice exercice = ficheMedical.exercices.get(i);
-                Intent toExercice = new Intent(FicheDetail.this , ExerciceDetail.class);
-                toExercice.putExtra("Exercice" , exercice);
-                startActivity(toExercice);
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                if(groupPosition == 1) {
+                    ListExercice listExercice = new ListExercice();
+                    listExercice.exercices = ficheMedical.exercices;
+                    Intent toExercice = new Intent(FicheDetail.this, ExerciceDetail.class);
+                    toExercice.putExtra("Exercices", listExercice);
+                    toExercice.putExtra("Id" , childPosition);
+                    startActivity(toExercice);
+                }
+                return false;
             }
         });
     }

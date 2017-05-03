@@ -14,16 +14,16 @@ public class SuikiContext {
 
     public InscriptionService inscriptionService;
     public ConnexionService connexionService;
-    public HistoriqueMedicalService historiqueMedicalService;
+    public HistoriqueExerciceService historiqueMedicalService;
 
     public SuikiContext()
     {
         context = new Retrofit.Builder()
-                .baseUrl("http://vps368768.ovh.net/")
+                .baseUrl("http://213.32.33.136:3000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         inscriptionService = context.create(InscriptionService.class);
         connexionService = context.create(ConnexionService.class);
-        historiqueMedicalService = context.create(HistoriqueMedicalService.class);
+        historiqueMedicalService = context.create(HistoriqueExerciceService.class);
     }
 }

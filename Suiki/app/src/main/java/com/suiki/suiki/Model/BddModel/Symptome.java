@@ -9,6 +9,8 @@ import java.io.Serializable;
  */
 
 public class Symptome implements Serializable {
+    @SerializedName("_id")
+    public String id;
     @SerializedName("nom")
     public String nom;
     @SerializedName("description")
