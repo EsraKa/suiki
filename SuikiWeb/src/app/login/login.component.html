@@ -1,8 +1,12 @@
-
-  <div class="col-md-6">
+<div class="center-block" >
+  <div class="col-md-12"style="text-align: center;">
+    <img src="../../assets/images/logo.png" style="width: 50%">
+  </div>
+  <div class="col-md-12" style="padding-right: 600px;
+    margin-left: 300px;">
     <h2>Login</h2>
     <form name="form">
-      <div class="col-sm-6">
+      <div class="col-md-12">
         <div class="form-group" >
           <label for="identifiant" id="identifiant">Identifiant</label>
           <input type="text" class="form-control" name="username" required />
@@ -11,16 +15,19 @@
           <label for="password" id="password">Mot de passe </label>
           <input type="password" class="form-control" name="password" required />
         </div>
-        <div class="form-group">
-          <div class="col-sm-6">
-            <button class="btn btn-login">Connexion</button>
+        <div class="center-block" style="text-align: center;">
+          <div class="form-group">
+            <div class="col-md-12">
+              <button class="btn btn-login" routerLink="/patient">Connexion</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <button class="btn btn-register" routerLink="/inscription">Inscription</button>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <div class="col-md-12">
-            <button class="btn btn-register" routerLink="/inscription">Inscription</button>
-          </div>
-        </div>
+
       </div>
 
     </form>
@@ -28,3 +35,5 @@
 
 
 
+
+</div>

@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  background-color: #e4e9e9;
+  background-color: #adcdde;;
   height: 100%;
 }
 
@@ -27,6 +27,7 @@ body{
   margin-right: 0px;
   padding-left: 0px;
   height: 677px;
+  border-radius: 15px;
 }
 
 /*.col-md-3 .col-md-9{
@@ -61,4 +62,12 @@ body{
 .footer p{
   color: white;
   text-align: center;
+}
+
+legend{
+  padding-left: 10px;
+}
+
+.btn-info{
+  margin-bottom: 10px;
 }
